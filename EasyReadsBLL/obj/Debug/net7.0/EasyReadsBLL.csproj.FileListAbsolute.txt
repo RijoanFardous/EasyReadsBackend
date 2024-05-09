@@ -1,0 +1,15 @@
+C:\Users\rijoa\source\repos\EasyReadsBackend\EasyReadsBLL\bin\Debug\net7.0\EasyReadsBLL.deps.json
+C:\Users\rijoa\source\repos\EasyReadsBackend\EasyReadsBLL\bin\Debug\net7.0\EasyReadsBLL.dll
+C:\Users\rijoa\source\repos\EasyReadsBackend\EasyReadsBLL\bin\Debug\net7.0\EasyReadsBLL.pdb
+C:\Users\rijoa\source\repos\EasyReadsBackend\EasyReadsBLL\bin\Debug\net7.0\EasyReadsDAL.dll
+C:\Users\rijoa\source\repos\EasyReadsBackend\EasyReadsBLL\bin\Debug\net7.0\EasyReadsDAL.pdb
+C:\Users\rijoa\source\repos\EasyReadsBackend\EasyReadsBLL\obj\Debug\net7.0\EasyReadsBLL.csproj.AssemblyReference.cache
+C:\Users\rijoa\source\repos\EasyReadsBackend\EasyReadsBLL\obj\Debug\net7.0\EasyReadsBLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rijoa\source\repos\EasyReadsBackend\EasyReadsBLL\obj\Debug\net7.0\EasyReadsBLL.AssemblyInfoInputs.cache
+C:\Users\rijoa\source\repos\EasyReadsBackend\EasyReadsBLL\obj\Debug\net7.0\EasyReadsBLL.AssemblyInfo.cs
+C:\Users\rijoa\source\repos\EasyReadsBackend\EasyReadsBLL\obj\Debug\net7.0\EasyReadsBLL.csproj.CoreCompileInputs.cache
+C:\Users\rijoa\source\repos\EasyReadsBackend\EasyReadsBLL\obj\Debug\net7.0\EasyRead.AB9DBF2A.Up2Date
+C:\Users\rijoa\source\repos\EasyReadsBackend\EasyReadsBLL\obj\Debug\net7.0\EasyReadsBLL.dll
+C:\Users\rijoa\source\repos\EasyReadsBackend\EasyReadsBLL\obj\Debug\net7.0\refint\EasyReadsBLL.dll
+C:\Users\rijoa\source\repos\EasyReadsBackend\EasyReadsBLL\obj\Debug\net7.0\EasyReadsBLL.pdb
+C:\Users\rijoa\source\repos\EasyReadsBackend\EasyReadsBLL\obj\Debug\net7.0\ref\EasyReadsBLL.dll
