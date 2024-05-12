@@ -1,4 +1,6 @@
-﻿using EasyReadsBLL.Services;
+﻿using EasyReadsAPI.Auth;
+using EasyReadsBLL.DTOs;
+using EasyReadsBLL.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -14,6 +16,24 @@ namespace EasyReadsAPI.Controllers
             _articleService = articleService;
         }
 
-
+        [TypeFilter(typeof(AuthorAttribute))]
+        [HttpPost]
+        [Route("create")]
+        public IActionResult CreateArticle(ArticleDTO article)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    _articleService.CreateArticle(article);
+                    return Ok();
+                }
+                return BadRequest(ModelState);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"An Error Occurred: {ex.Message}");
+            }
+        }
     }
 }

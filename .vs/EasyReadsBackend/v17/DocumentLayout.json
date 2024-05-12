@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\rijoa\\source\\repos\\EasyReadsBackend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B1B9D0A0-1F6D-4538-A741-4BB465FE308B}|EasyReadsDAL\\EasyReadsDAL.csproj|c:\\users\\rijoa\\source\\repos\\easyreadsbackend\\easyreadsdal\\dataaccessfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1B9D0A0-1F6D-4538-A741-4BB465FE308B}|EasyReadsDAL\\EasyReadsDAL.csproj|solutionrelative:easyreadsdal\\dataaccessfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{324928C6-2B76-409A-A4FC-8DCF6D8644E2}|EasyReadsAPI\\EasyReadsAPI.csproj|c:\\users\\rijoa\\source\\repos\\easyreadsbackend\\easyreadsapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{324928C6-2B76-409A-A4FC-8DCF6D8644E2}|EasyReadsAPI\\EasyReadsAPI.csproj|solutionrelative:easyreadsapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{324928C6-2B76-409A-A4FC-8DCF6D8644E2}|EasyReadsAPI\\EasyReadsAPI.csproj|c:\\users\\rijoa\\source\\repos\\easyreadsbackend\\easyreadsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,8 +15,24 @@
       "RelativeMoniker": "D:0:0:{2BF1666E-7233-41E3-B247-1F4F78FE619F}|EasyReadsBLL\\EasyReadsBLL.csproj|solutionrelative:easyreadsbll\\services\\articleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{B1B9D0A0-1F6D-4538-A741-4BB465FE308B}|EasyReadsDAL\\EasyReadsDAL.csproj|c:\\users\\rijoa\\source\\repos\\easyreadsbackend\\easyreadsdal\\ef\\entities\\article.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1B9D0A0-1F6D-4538-A741-4BB465FE308B}|EasyReadsDAL\\EasyReadsDAL.csproj|solutionrelative:easyreadsdal\\ef\\entities\\article.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{324928C6-2B76-409A-A4FC-8DCF6D8644E2}|EasyReadsAPI\\EasyReadsAPI.csproj|c:\\users\\rijoa\\source\\repos\\easyreadsbackend\\easyreadsapi\\controllers\\articlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{324928C6-2B76-409A-A4FC-8DCF6D8644E2}|EasyReadsAPI\\EasyReadsAPI.csproj|solutionrelative:easyreadsapi\\controllers\\articlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B9D0A0-1F6D-4538-A741-4BB465FE308B}|EasyReadsDAL\\EasyReadsDAL.csproj|c:\\users\\rijoa\\source\\repos\\easyreadsbackend\\easyreadsdal\\repos\\articlerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1B9D0A0-1F6D-4538-A741-4BB465FE308B}|EasyReadsDAL\\EasyReadsDAL.csproj|solutionrelative:easyreadsdal\\repos\\articlerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B9D0A0-1F6D-4538-A741-4BB465FE308B}|EasyReadsDAL\\EasyReadsDAL.csproj|c:\\users\\rijoa\\source\\repos\\easyreadsbackend\\easyreadsdal\\dataaccessfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1B9D0A0-1F6D-4538-A741-4BB465FE308B}|EasyReadsDAL\\EasyReadsDAL.csproj|solutionrelative:easyreadsdal\\dataaccessfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B9D0A0-1F6D-4538-A741-4BB465FE308B}|EasyReadsDAL\\EasyReadsDAL.csproj|c:\\users\\rijoa\\source\\repos\\easyreadsbackend\\easyreadsdal\\interfaces\\iarticlerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1B9D0A0-1F6D-4538-A741-4BB465FE308B}|EasyReadsDAL\\EasyReadsDAL.csproj|solutionrelative:easyreadsdal\\interfaces\\iarticlerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,24 +42,11 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DataAccessFactory.cs",
-              "DocumentMoniker": "C:\\Users\\rijoa\\source\\repos\\EasyReadsBackend\\EasyReadsDAL\\DataAccessFactory.cs",
-              "RelativeDocumentMoniker": "EasyReadsDAL\\DataAccessFactory.cs",
-              "ToolTip": "C:\\Users\\rijoa\\source\\repos\\EasyReadsBackend\\EasyReadsDAL\\DataAccessFactory.cs",
-              "RelativeToolTip": "EasyReadsDAL\\DataAccessFactory.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T13:26:08.172Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -53,9 +56,9 @@
               "RelativeDocumentMoniker": "EasyReadsAPI\\Program.cs",
               "ToolTip": "C:\\Users\\rijoa\\source\\repos\\EasyReadsBackend\\EasyReadsAPI\\Program.cs",
               "RelativeToolTip": "EasyReadsAPI\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T13:20:16.465Z",
+              "WhenOpened": "2024-05-10T14:46:48.257Z",
               "EditorCaption": ""
             },
             {
@@ -66,23 +69,83 @@
               "RelativeDocumentMoniker": "EasyReadsBLL\\Services\\ArticleService.cs",
               "ToolTip": "C:\\Users\\rijoa\\source\\repos\\EasyReadsBackend\\EasyReadsBLL\\Services\\ArticleService.cs",
               "RelativeToolTip": "EasyReadsBLL\\Services\\ArticleService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T13:15:28.27Z",
+              "WhenOpened": "2024-05-09T15:11:10.021Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ArticleController.cs",
               "DocumentMoniker": "C:\\Users\\rijoa\\source\\repos\\EasyReadsBackend\\EasyReadsAPI\\Controllers\\ArticleController.cs",
               "RelativeDocumentMoniker": "EasyReadsAPI\\Controllers\\ArticleController.cs",
               "ToolTip": "C:\\Users\\rijoa\\source\\repos\\EasyReadsBackend\\EasyReadsAPI\\Controllers\\ArticleController.cs",
               "RelativeToolTip": "EasyReadsAPI\\Controllers\\ArticleController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T13:14:46.796Z",
+              "WhenOpened": "2024-05-09T14:55:55.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\rijoa\\source\\repos\\EasyReadsBackend\\EasyReadsAPI\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "EasyReadsAPI\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\rijoa\\source\\repos\\EasyReadsBackend\\EasyReadsAPI\\Controllers\\UserController.cs",
+              "RelativeToolTip": "EasyReadsAPI\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABcAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T14:55:52.77Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DataAccessFactory.cs",
+              "DocumentMoniker": "C:\\Users\\rijoa\\source\\repos\\EasyReadsBackend\\EasyReadsDAL\\DataAccessFactory.cs",
+              "RelativeDocumentMoniker": "EasyReadsDAL\\DataAccessFactory.cs",
+              "ToolTip": "C:\\Users\\rijoa\\source\\repos\\EasyReadsBackend\\EasyReadsDAL\\DataAccessFactory.cs",
+              "RelativeToolTip": "EasyReadsDAL\\DataAccessFactory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T14:53:12.218Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Article.cs",
+              "DocumentMoniker": "C:\\Users\\rijoa\\source\\repos\\EasyReadsBackend\\EasyReadsDAL\\EF\\Entities\\Article.cs",
+              "RelativeDocumentMoniker": "EasyReadsDAL\\EF\\Entities\\Article.cs",
+              "ToolTip": "C:\\Users\\rijoa\\source\\repos\\EasyReadsBackend\\EasyReadsDAL\\EF\\Entities\\Article.cs",
+              "RelativeToolTip": "EasyReadsDAL\\EF\\Entities\\Article.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T14:47:53.652Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ArticleRepo.cs",
+              "DocumentMoniker": "C:\\Users\\rijoa\\source\\repos\\EasyReadsBackend\\EasyReadsDAL\\Repos\\ArticleRepo.cs",
+              "RelativeDocumentMoniker": "EasyReadsDAL\\Repos\\ArticleRepo.cs",
+              "ToolTip": "C:\\Users\\rijoa\\source\\repos\\EasyReadsBackend\\EasyReadsDAL\\Repos\\ArticleRepo.cs",
+              "RelativeToolTip": "EasyReadsDAL\\Repos\\ArticleRepo.cs",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAqwF0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T14:37:29.502Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IArticleRepo.cs",
+              "DocumentMoniker": "C:\\Users\\rijoa\\source\\repos\\EasyReadsBackend\\EasyReadsDAL\\Interfaces\\IArticleRepo.cs",
+              "RelativeDocumentMoniker": "EasyReadsDAL\\Interfaces\\IArticleRepo.cs",
+              "ToolTip": "C:\\Users\\rijoa\\source\\repos\\EasyReadsBackend\\EasyReadsDAL\\Interfaces\\IArticleRepo.cs",
+              "RelativeToolTip": "EasyReadsDAL\\Interfaces\\IArticleRepo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T14:21:05.417Z"
             }
           ]
         }

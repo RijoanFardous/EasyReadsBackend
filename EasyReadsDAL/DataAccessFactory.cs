@@ -33,5 +33,10 @@ namespace EasyReadsDAL
         {
             return new TokenRepo(_context);
         }
+
+        public IArticleRepo ArticleData()
+        {
+            return new ArticleRepo(_context);
+        }
     }
 }

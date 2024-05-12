@@ -1,4 +1,6 @@
-﻿using EasyReadsDAL;
+﻿using EasyReadsBLL.DTOs;
+using EasyReadsDAL;
+using EasyReadsDAL.EF.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +17,25 @@ namespace EasyReadsBLL.Services
             _dataAccessFactory = dataAccessFactory;
         }
 
+        public void CreateArticle(ArticleDTO articleDTO)
+        {
+            Article article = new Article();
+            article.Title = articleDTO.Title;
+            article.Content = articleDTO.Content;
+            article.WrittenBy = articleDTO.WrittenBy;
+            
+            if(articleDTO.Audience.Equals("Public") || articleDTO.Audience.Equals("Followers"))
+            {
+                article.Audience = articleDTO.Audience;
+            }
+            else
+            {
+                article.Audience = "Private";
+            }
 
+            string[] words = articleDTO.Content.Split(new char[] { ' ', '\t', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
+            article.NumberOfWords = words.Length;
+
+        }
     }
 }

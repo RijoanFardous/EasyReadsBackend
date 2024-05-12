@@ -22,9 +22,25 @@ builder.Services.AddScoped<DataAccessFactory>();
 builder.Services.AddScoped<LoggedAttribute>();
 builder.Services.AddScoped<AuthorAttribute>();
 
+// Enable CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowOrigin",
+        builder => builder
+            .AllowAnyOrigin() // Consider restricting this to your frontend URL in production
+            .AllowAnyHeader()
+            .AllowAnyMethod());
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
+{
+    app.UseDeveloperExceptionPage();
+}
+
+app.UseCors("AllowOrigin");
 
 app.UseHttpsRedirection();
 
