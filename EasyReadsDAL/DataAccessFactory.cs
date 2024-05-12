@@ -38,5 +38,10 @@ namespace EasyReadsDAL
         {
             return new ArticleRepo(_context);
         }
+
+        public IRepo<Topic,int> TopicData()
+        {
+            return new TopicRepo(_context);
+        }
     }
 }

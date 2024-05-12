@@ -105,6 +105,61 @@ namespace EasyReadsDAL.Migrations
                     b.ToTable("ArticleVersions");
                 });
 
+            modelBuilder.Entity("EasyReadsDAL.EF.Entities.Bookmark", b =>
+                {
+                    b.Property<int>("BookmarkId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<int>("ArticleId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("TimeStamp")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("UserName")
+                        .IsRequired()
+                        .HasColumnType("varchar(30)");
+
+                    b.HasKey("BookmarkId");
+
+                    b.HasIndex("ArticleId");
+
+                    b.HasIndex("UserName");
+
+                    b.ToTable("Bookmarks");
+                });
+
+            modelBuilder.Entity("EasyReadsDAL.EF.Entities.Comment", b =>
+                {
+                    b.Property<int>("CommentId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<int>("ArticleId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("varchar(200)");
+
+                    b.Property<DateTime>("TimeStamp")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasColumnType("varchar(30)");
+
+                    b.HasKey("CommentId");
+
+                    b.HasIndex("ArticleId");
+
+                    b.HasIndex("Username");
+
+                    b.ToTable("Comments");
+                });
+
             modelBuilder.Entity("EasyReadsDAL.EF.Entities.Profile", b =>
                 {
                     b.Property<int>("ProfileId")
@@ -144,6 +199,36 @@ namespace EasyReadsDAL.Migrations
                     b.ToTable("Profiles");
                 });
 
+            modelBuilder.Entity("EasyReadsDAL.EF.Entities.Reply", b =>
+                {
+                    b.Property<int>("ReplyId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<int>("CommentId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("varchar(200)");
+
+                    b.Property<DateTime>("TimeStamp")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasColumnType("varchar(30)");
+
+                    b.HasKey("ReplyId");
+
+                    b.HasIndex("CommentId");
+
+                    b.HasIndex("Username");
+
+                    b.ToTable("Replies");
+                });
+
             modelBuilder.Entity("EasyReadsDAL.EF.Entities.Token", b =>
                 {
                     b.Property<int>("TokenId")
@@ -173,6 +258,28 @@ namespace EasyReadsDAL.Migrations
                     b.HasIndex("Username");
 
                     b.ToTable("Tokens");
+                });
+
+            modelBuilder.Entity("EasyReadsDAL.EF.Entities.Topic", b =>
+                {
+                    b.Property<int>("TopicId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("AddDate")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<int>("FollowersCount")
+                        .HasColumnType("int");
+
+                    b.Property<string>("TopicName")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("varchar(50)");
+
+                    b.HasKey("TopicId");
+
+                    b.ToTable("Topics");
                 });
 
             modelBuilder.Entity("EasyReadsDAL.EF.Entities.User", b =>
@@ -209,6 +316,31 @@ namespace EasyReadsDAL.Migrations
                     b.ToTable("Users");
                 });
 
+            modelBuilder.Entity("EasyReadsDAL.EF.Entities.UserTopic", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("TimeStamp")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<int>("TopicId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasColumnType("varchar(30)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("TopicId");
+
+                    b.HasIndex("Username");
+
+                    b.ToTable("UserTopics");
+                });
+
             modelBuilder.Entity("EasyReadsDAL.EF.Entities.Article", b =>
                 {
                     b.HasOne("EasyReadsDAL.EF.Entities.User", "Author")
@@ -231,6 +363,44 @@ namespace EasyReadsDAL.Migrations
                     b.Navigation("Article");
                 });
 
+            modelBuilder.Entity("EasyReadsDAL.EF.Entities.Bookmark", b =>
+                {
+                    b.HasOne("EasyReadsDAL.EF.Entities.Article", "Article")
+                        .WithMany()
+                        .HasForeignKey("ArticleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EasyReadsDAL.EF.Entities.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserName")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Article");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("EasyReadsDAL.EF.Entities.Comment", b =>
+                {
+                    b.HasOne("EasyReadsDAL.EF.Entities.Article", "Article")
+                        .WithMany()
+                        .HasForeignKey("ArticleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EasyReadsDAL.EF.Entities.User", "User")
+                        .WithMany()
+                        .HasForeignKey("Username")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Article");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("EasyReadsDAL.EF.Entities.Profile", b =>
                 {
                     b.HasOne("EasyReadsDAL.EF.Entities.User", "User")
@@ -242,6 +412,25 @@ namespace EasyReadsDAL.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("EasyReadsDAL.EF.Entities.Reply", b =>
+                {
+                    b.HasOne("EasyReadsDAL.EF.Entities.Comment", "Comment")
+                        .WithMany()
+                        .HasForeignKey("CommentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EasyReadsDAL.EF.Entities.User", "User")
+                        .WithMany()
+                        .HasForeignKey("Username")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Comment");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("EasyReadsDAL.EF.Entities.Token", b =>
                 {
                     b.HasOne("EasyReadsDAL.EF.Entities.User", "User")
@@ -249,6 +438,25 @@ namespace EasyReadsDAL.Migrations
                         .HasForeignKey("Username")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("EasyReadsDAL.EF.Entities.UserTopic", b =>
+                {
+                    b.HasOne("EasyReadsDAL.EF.Entities.Topic", "Topic")
+                        .WithMany()
+                        .HasForeignKey("TopicId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EasyReadsDAL.EF.Entities.User", "User")
+                        .WithMany()
+                        .HasForeignKey("Username")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Topic");
 
                     b.Navigation("User");
                 });

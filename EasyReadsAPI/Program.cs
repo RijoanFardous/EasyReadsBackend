@@ -17,6 +17,7 @@ builder.Services.AddDbContext<EasyReadsContext>(options => options.UseMySql(conn
 
 builder.Services.AddScoped<UserService>();
 builder.Services.AddScoped<ArticleService>();
+builder.Services.AddScoped<TopicService>();
 builder.Services.AddScoped<DataAccessFactory>();
 //builder.Services.AddScoped<IUserRepo, UserRepo>();
 builder.Services.AddScoped<LoggedAttribute>();
