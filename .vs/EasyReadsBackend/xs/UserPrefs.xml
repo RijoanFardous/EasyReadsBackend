@@ -1,54 +1,50 @@
 ﻿<Properties StartupConfiguration="{324928C6-2B76-409A-A4FC-8DCF6D8644E2}|https">
-  <MonoDevelop.Ide.ItemProperties.EasyReadsAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="EasyReadsAPI/Controllers/TopicController.cs">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="EasyReadsDAL/EF/Entities/Report.cs">
     <Files>
       <File FileName="EasyReadsDAL/EF/Entities/Article.cs" />
       <File FileName="EasyReadsDAL/EF/Entities/User.cs" />
       <File FileName="EasyReadsDAL/EF/Entities/Profile.cs" />
       <File FileName="EasyReadsDAL/EF/Entities/Token.cs" />
-      <File FileName="EasyReadsDAL/EF/EasyReadsContextFactory.cs" />
-      <File FileName="EasyReadsDAL/EF/EasyReadsContext.cs" />
+      <File FileName="EasyReadsDAL/EF/EasyReadsContextFactory.cs" Line="15" Column="63" />
+      <File FileName="EasyReadsDAL/EF/EasyReadsContext.cs" Line="1" Column="1" />
       <File FileName="EasyReadsDAL/Interfaces/IArticleRepo.cs" />
       <File FileName="EasyReadsDAL/Interfaces/IProfileRepo.cs" />
       <File FileName="EasyReadsDAL/Interfaces/IRepo.cs" />
       <File FileName="EasyReadsDAL/Interfaces/IUserRepo.cs" />
       <File FileName="EasyReadsDAL/Repos/ArticleRepo.cs" />
-      <File FileName="EasyReadsDAL/DataAccessFactory.cs" Line="44" Column="44" />
+      <File FileName="EasyReadsDAL/DataAccessFactory.cs" />
       <File FileName="EasyReadsDAL/EF/Entities/Bookmark.cs" />
       <File FileName="EasyReadsDAL/EF/Entities/ArticleVersion.cs" />
       <File FileName="EasyReadsDAL/EF/Entities/Comment.cs" />
-      <File FileName="EasyReadsDAL/EF/Entities/Topic.cs" Line="18" Column="28" />
+      <File FileName="EasyReadsDAL/EF/Entities/Topic.cs" />
       <File FileName="EasyReadsDAL/EF/Entities/UserTopic.cs" />
-      <File FileName="EasyReadsDAL/Repos/TopicRepo.cs" Line="40" Column="27" />
+      <File FileName="EasyReadsDAL/Repos/TopicRepo.cs" />
       <File FileName="EasyReadsDAL/Repos/ProfileRepo.cs" />
-      <File FileName="EasyReadsAPI/Controllers/AdminController.cs" Line="18" Column="1" />
-      <File FileName="EasyReadsAPI/Controllers/UserController.cs" Line="16" Column="10" />
-      <File FileName="EasyReadsAPI/Controllers/ArticleController.cs" Line="31" Column="16" />
-      <File FileName="EasyReadsBLL/DTOs/TopicDTO.cs" Line="12" Column="27" />
+      <File FileName="EasyReadsAPI/Controllers/AdminController.cs" />
+      <File FileName="EasyReadsAPI/Controllers/UserController.cs" />
+      <File FileName="EasyReadsAPI/Controllers/ArticleController.cs" />
+      <File FileName="EasyReadsBLL/DTOs/TopicDTO.cs" />
       <File FileName="EasyReadsBLL/DTOs/TokenDTO.cs" />
-      <File FileName="EasyReadsBLL/Services/TopicService.cs" Line="60" Column="68" />
-      <File FileName="EasyReadsBLL/Services/UserService.cs" Line="188" Column="42" />
-      <File FileName="EasyReadsAPI/Controllers/TopicController.cs" Line="68" Column="18" />
+      <File FileName="EasyReadsBLL/Services/TopicService.cs" />
+      <File FileName="EasyReadsBLL/Services/UserService.cs" />
+      <File FileName="EasyReadsAPI/Controllers/TopicController.cs" Line="68" Column="1" />
       <File FileName="EasyReadsAPI/Program.cs" Line="20" Column="44" />
-      <File FileName="EasyReadsBLL/Services/ArticleService.cs" Line="1" Column="1" />
+      <File FileName="EasyReadsBLL/Services/ArticleService.cs" />
+      <File FileName="EasyReadsAPI/appsettings.json" Line="10" Column="54" />
+      <File FileName="EasyReadsDAL/EF/Entities/Report.cs" Line="15" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="EasyReadsBackend">
-            <Node name="EasyReadsAPI">
-              <Node name="Controllers" expanded="True">
-                <Node name="TopicController.cs" selected="True" />
-              </Node>
-            </Node>
-            <Node name="EasyReadsBLL">
-              <Node name="DTOs" expanded="True" />
-              <Node name="Services" expanded="True" />
-            </Node>
-            <Node name="EasyReadsDAL" expanded="True">
+          <Node name="EasyReadsBackend" expanded="True">
+            <Node name="EasyReadsDAL">
               <Node name="EF" expanded="True">
-                <Node name="Entities" expanded="True" />
+                <Node name="Entities" expanded="True">
+                  <Node name="Report.cs" selected="True" />
+                </Node>
               </Node>
               <Node name="Repos" expanded="True" />
             </Node>
@@ -57,9 +53,8 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.EasyReadsAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>

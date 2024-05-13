@@ -22,5 +22,9 @@ namespace EasyReadsDAL.EF
         public DbSet<Topic> Topics { get; set; }
         public DbSet<Reply> Replies { get; set; }
         public DbSet<UserTopic> UserTopics { get; set; }
+        public DbSet<Like> Likes { get; set; }
+        public DbSet<Follower> Followers { get; set; }
+        public DbSet<Application> Applications { get; set; }
+        public DbSet<Report> Reports { get; set; }
     }
 }

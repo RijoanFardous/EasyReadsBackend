@@ -21,7 +21,6 @@ builder.Services.AddScoped<TopicService>();
 builder.Services.AddScoped<BookmarkService>();
 builder.Services.AddScoped<CommentService>();
 builder.Services.AddScoped<DataAccessFactory>();
-//builder.Services.AddScoped<IUserRepo, UserRepo>();
 builder.Services.AddScoped<LoggedAttribute>();
 builder.Services.AddScoped<AuthorAttribute>();
 
@@ -30,7 +29,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowOrigin",
         builder => builder
-            .AllowAnyOrigin() // Consider restricting this to your frontend URL in production
+            .AllowAnyOrigin()
             .AllowAnyHeader()
             .AllowAnyMethod());
 });

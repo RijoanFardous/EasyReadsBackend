@@ -1,34 +1,34 @@
 {
   "format": 1,
   "restore": {
-    "/Users/sabihakhairohi/Downloads/EasyReadsBackend/EasyReadsAPI/EasyReadsAPI.csproj": {}
+    "/Users/tanvir/Downloads/EasyReadsBackend/EasyReadsAPI/EasyReadsAPI.csproj": {}
   },
   "projects": {
-    "/Users/sabihakhairohi/Downloads/EasyReadsBackend/EasyReadsAPI/EasyReadsAPI.csproj": {
+    "/Users/tanvir/Downloads/EasyReadsBackend/EasyReadsAPI/EasyReadsAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/sabihakhairohi/Downloads/EasyReadsBackend/EasyReadsAPI/EasyReadsAPI.csproj",
+        "projectUniqueName": "/Users/tanvir/Downloads/EasyReadsBackend/EasyReadsAPI/EasyReadsAPI.csproj",
         "projectName": "EasyReadsAPI",
-        "projectPath": "/Users/sabihakhairohi/Downloads/EasyReadsBackend/EasyReadsAPI/EasyReadsAPI.csproj",
-        "packagesPath": "/Users/sabihakhairohi/.nuget/packages/",
-        "outputPath": "/Users/sabihakhairohi/Downloads/EasyReadsBackend/EasyReadsAPI/obj/",
+        "projectPath": "/Users/tanvir/Downloads/EasyReadsBackend/EasyReadsAPI/EasyReadsAPI.csproj",
+        "packagesPath": "/Users/tanvir/.nuget/packages/",
+        "outputPath": "/Users/tanvir/Downloads/EasyReadsBackend/EasyReadsAPI/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/sabihakhairohi/.nuget/NuGet/NuGet.Config"
+          "/Users/tanvir/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
+          "/usr/local/share/dotnet/sdk/7.0.315/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/sabihakhairohi/Downloads/EasyReadsBackend/EasyReadsBLL/EasyReadsBLL.csproj": {
-                "projectPath": "/Users/sabihakhairohi/Downloads/EasyReadsBackend/EasyReadsBLL/EasyReadsBLL.csproj"
+              "/Users/tanvir/Downloads/EasyReadsBackend/EasyReadsBLL/EasyReadsBLL.csproj": {
+                "projectPath": "/Users/tanvir/Downloads/EasyReadsBackend/EasyReadsBLL/EasyReadsBLL.csproj"
               }
             }
           }
@@ -37,11 +37,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -74,20 +69,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.17, 7.0.17]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.osx-arm64",
-              "version": "[7.0.17, 7.0.17]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.17, 7.0.17]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -96,35 +77,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.315/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/sabihakhairohi/Downloads/EasyReadsBackend/EasyReadsBLL/EasyReadsBLL.csproj": {
+    "/Users/tanvir/Downloads/EasyReadsBackend/EasyReadsBLL/EasyReadsBLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/sabihakhairohi/Downloads/EasyReadsBackend/EasyReadsBLL/EasyReadsBLL.csproj",
+        "projectUniqueName": "/Users/tanvir/Downloads/EasyReadsBackend/EasyReadsBLL/EasyReadsBLL.csproj",
         "projectName": "EasyReadsBLL",
-        "projectPath": "/Users/sabihakhairohi/Downloads/EasyReadsBackend/EasyReadsBLL/EasyReadsBLL.csproj",
-        "packagesPath": "/Users/sabihakhairohi/.nuget/packages/",
-        "outputPath": "/Users/sabihakhairohi/Downloads/EasyReadsBackend/EasyReadsBLL/obj/",
+        "projectPath": "/Users/tanvir/Downloads/EasyReadsBackend/EasyReadsBLL/EasyReadsBLL.csproj",
+        "packagesPath": "/Users/tanvir/.nuget/packages/",
+        "outputPath": "/Users/tanvir/Downloads/EasyReadsBackend/EasyReadsBLL/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/sabihakhairohi/.nuget/NuGet/NuGet.Config"
+          "/Users/tanvir/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/sabihakhairohi/Downloads/EasyReadsBackend/EasyReadsDAL/EasyReadsDAL.csproj": {
-                "projectPath": "/Users/sabihakhairohi/Downloads/EasyReadsBackend/EasyReadsDAL/EasyReadsDAL.csproj"
+              "/Users/tanvir/Downloads/EasyReadsBackend/EasyReadsDAL/EasyReadsDAL.csproj": {
+                "projectPath": "/Users/tanvir/Downloads/EasyReadsBackend/EasyReadsDAL/EasyReadsDAL.csproj"
               }
             }
           }
@@ -133,11 +113,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -160,42 +135,31 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.17, 7.0.17]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.17, 7.0.17]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.315/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/sabihakhairohi/Downloads/EasyReadsBackend/EasyReadsDAL/EasyReadsDAL.csproj": {
+    "/Users/tanvir/Downloads/EasyReadsBackend/EasyReadsDAL/EasyReadsDAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/sabihakhairohi/Downloads/EasyReadsBackend/EasyReadsDAL/EasyReadsDAL.csproj",
+        "projectUniqueName": "/Users/tanvir/Downloads/EasyReadsBackend/EasyReadsDAL/EasyReadsDAL.csproj",
         "projectName": "EasyReadsDAL",
-        "projectPath": "/Users/sabihakhairohi/Downloads/EasyReadsBackend/EasyReadsDAL/EasyReadsDAL.csproj",
-        "packagesPath": "/Users/sabihakhairohi/.nuget/packages/",
-        "outputPath": "/Users/sabihakhairohi/Downloads/EasyReadsBackend/EasyReadsDAL/obj/",
+        "projectPath": "/Users/tanvir/Downloads/EasyReadsBackend/EasyReadsDAL/EasyReadsDAL.csproj",
+        "packagesPath": "/Users/tanvir/.nuget/packages/",
+        "outputPath": "/Users/tanvir/Downloads/EasyReadsBackend/EasyReadsDAL/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/sabihakhairohi/.nuget/NuGet/NuGet.Config"
+          "/Users/tanvir/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -208,11 +172,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -249,22 +208,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.17, 7.0.17]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.17, 7.0.17]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.315/RuntimeIdentifierGraph.json"
         }
       }
     }

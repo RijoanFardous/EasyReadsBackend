@@ -19,6 +19,36 @@ namespace EasyReadsDAL.Migrations
                 .HasAnnotation("ProductVersion", "7.0.18")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
+            modelBuilder.Entity("EasyReadsDAL.EF.Entities.Application", b =>
+                {
+                    b.Property<int>("ApplicationId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("AppliedAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasColumnType("varchar(30)");
+
+                    b.HasKey("ApplicationId");
+
+                    b.HasIndex("Username");
+
+                    b.ToTable("Applications");
+                });
+
             modelBuilder.Entity("EasyReadsDAL.EF.Entities.Article", b =>
                 {
                     b.Property<int>("ArticleId")
@@ -165,6 +195,57 @@ namespace EasyReadsDAL.Migrations
                     b.ToTable("Comments");
                 });
 
+            modelBuilder.Entity("EasyReadsDAL.EF.Entities.Follower", b =>
+                {
+                    b.Property<int>("FollowerId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("FollowedAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("FollowedUsername")
+                        .IsRequired()
+                        .HasColumnType("varchar(30)");
+
+                    b.Property<string>("FollowerUsername")
+                        .IsRequired()
+                        .HasColumnType("varchar(30)");
+
+                    b.HasKey("FollowerId");
+
+                    b.HasIndex("FollowedUsername");
+
+                    b.HasIndex("FollowerUsername");
+
+                    b.ToTable("Followers");
+                });
+
+            modelBuilder.Entity("EasyReadsDAL.EF.Entities.Like", b =>
+                {
+                    b.Property<int>("LikeId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<int>("ArticleId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("LikedAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasColumnType("varchar(30)");
+
+                    b.HasKey("LikeId");
+
+                    b.HasIndex("ArticleId");
+
+                    b.HasIndex("Username");
+
+                    b.ToTable("Likes");
+                });
+
             modelBuilder.Entity("EasyReadsDAL.EF.Entities.Profile", b =>
                 {
                     b.Property<int>("ProfileId")
@@ -232,6 +313,41 @@ namespace EasyReadsDAL.Migrations
                     b.HasIndex("Username");
 
                     b.ToTable("Replies");
+                });
+
+            modelBuilder.Entity("EasyReadsDAL.EF.Entities.Report", b =>
+                {
+                    b.Property<int>("ReportId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<int>("ArticleId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Reason")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<DateTime>("ReportedAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasColumnType("varchar(30)");
+
+                    b.HasKey("ReportId");
+
+                    b.HasIndex("ArticleId");
+
+                    b.HasIndex("Username");
+
+                    b.ToTable("Reports");
                 });
 
             modelBuilder.Entity("EasyReadsDAL.EF.Entities.Token", b =>
@@ -346,6 +462,17 @@ namespace EasyReadsDAL.Migrations
                     b.ToTable("UserTopics");
                 });
 
+            modelBuilder.Entity("EasyReadsDAL.EF.Entities.Application", b =>
+                {
+                    b.HasOne("EasyReadsDAL.EF.Entities.User", "User")
+                        .WithMany()
+                        .HasForeignKey("Username")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("EasyReadsDAL.EF.Entities.Article", b =>
                 {
                     b.HasOne("EasyReadsDAL.EF.Entities.Topic", "Topic")
@@ -414,6 +541,44 @@ namespace EasyReadsDAL.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("EasyReadsDAL.EF.Entities.Follower", b =>
+                {
+                    b.HasOne("EasyReadsDAL.EF.Entities.User", "FollowedUser")
+                        .WithMany()
+                        .HasForeignKey("FollowedUsername")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EasyReadsDAL.EF.Entities.User", "FollowerUser")
+                        .WithMany()
+                        .HasForeignKey("FollowerUsername")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("FollowedUser");
+
+                    b.Navigation("FollowerUser");
+                });
+
+            modelBuilder.Entity("EasyReadsDAL.EF.Entities.Like", b =>
+                {
+                    b.HasOne("EasyReadsDAL.EF.Entities.Article", "Article")
+                        .WithMany()
+                        .HasForeignKey("ArticleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EasyReadsDAL.EF.Entities.User", "User")
+                        .WithMany()
+                        .HasForeignKey("Username")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Article");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("EasyReadsDAL.EF.Entities.Profile", b =>
                 {
                     b.HasOne("EasyReadsDAL.EF.Entities.User", "User")
@@ -440,6 +605,25 @@ namespace EasyReadsDAL.Migrations
                         .IsRequired();
 
                     b.Navigation("Comment");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("EasyReadsDAL.EF.Entities.Report", b =>
+                {
+                    b.HasOne("EasyReadsDAL.EF.Entities.Article", "Article")
+                        .WithMany()
+                        .HasForeignKey("ArticleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EasyReadsDAL.EF.Entities.User", "User")
+                        .WithMany()
+                        .HasForeignKey("Username")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Article");
 
                     b.Navigation("User");
                 });

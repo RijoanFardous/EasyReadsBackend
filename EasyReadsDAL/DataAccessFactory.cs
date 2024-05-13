@@ -53,5 +53,15 @@ namespace EasyReadsDAL
         {
             return new CommentRepo(_context);
         }
+
+        public IFollowerRepo FollowerData()
+        {
+            return new FollowerRepo(_context);
+        }
+
+        public ILikeRepo LikeData()
+        {
+            return new LikeRepo(_context);
+        }
     }
 }

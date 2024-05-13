@@ -12,7 +12,7 @@ namespace EasyReadsDAL.EF
     {
         public EasyReadsContext CreateDbContext(string[] args)
         {
-            var connectionString = "Server=localhost;Port=3306;User=root;Database=EasyReadsDb;";
+            var connectionString = "Server=localhost;Port=3308;User=root;Database=EasyReadsDb;";
             var optionsBuilder = new DbContextOptionsBuilder<EasyReadsContext>();
             optionsBuilder.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
 
