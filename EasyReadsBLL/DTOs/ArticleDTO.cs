@@ -28,6 +28,9 @@ namespace EasyReadsBLL.DTOs
         [Required]
         public string Audience { get; set; }
 
+        [Required]
+        public int TopicId { get; set; }
+
         public int LikesCount { get; set; }
         public int CommentsCount { get; set; }
         public int BookmarksCount { get; set; }

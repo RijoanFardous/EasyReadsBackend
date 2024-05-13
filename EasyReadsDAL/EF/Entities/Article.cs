@@ -32,6 +32,9 @@ namespace EasyReadsDAL.EF.Entities
         [StringLength(20)]
         public string Audience { get; set; }
 
+        [ForeignKey("Topic")]
+        public int TopicId { get; set; }
+
         public int LikesCount { get; set; }
         public int CommentsCount { get; set; }
         public int BookmarksCount { get; set; }
@@ -40,5 +43,6 @@ namespace EasyReadsDAL.EF.Entities
         public DateTime? ModifiedAt { get; set; }
 
         public virtual User Author { get; set; }
+        public virtual Topic Topic { get; set; }
     }
 }

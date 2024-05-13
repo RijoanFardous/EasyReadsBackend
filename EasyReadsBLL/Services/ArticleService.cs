@@ -23,6 +23,7 @@ namespace EasyReadsBLL.Services
             article.Title = articleDTO.Title;
             article.Content = articleDTO.Content;
             article.WrittenBy = articleDTO.WrittenBy;
+            article.TopicId = articleDTO.TopicId;
             
             if(articleDTO.Audience.Equals("Public") || articleDTO.Audience.Equals("Followers"))
             {
@@ -35,7 +36,7 @@ namespace EasyReadsBLL.Services
 
             string[] words = articleDTO.Content.Split(new char[] { ' ', '\t', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
             article.NumberOfWords = words.Length;
-
+            _dataAccessFactory.ArticleData().CreateArticle(article);
         }
     }
 }

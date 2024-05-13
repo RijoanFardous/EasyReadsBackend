@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = EasyReadsDAL
-build_property.ProjectDir = /Users/sabihakhairohi/Projects/Blog-Project/EasyReadsBackend/EasyReadsDAL/
+build_property.ProjectDir = C:\Users\rijoa\source\repos\EasyReadsBackend\EasyReadsDAL\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
