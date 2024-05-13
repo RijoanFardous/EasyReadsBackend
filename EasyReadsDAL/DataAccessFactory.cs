@@ -39,9 +39,19 @@ namespace EasyReadsDAL
             return new ArticleRepo(_context);
         }
 
-        public IRepo<Topic,int> TopicData()
+        public ITopicRepo TopicData()
         {
             return new TopicRepo(_context);
+        }
+
+        public IBookmarkRepo BookmarkData()
+        {
+            return new BookmarkRepo(_context);
+        }
+
+        public ICommentRepo CommentData()
+        {
+            return new CommentRepo(_context);
         }
     }
 }

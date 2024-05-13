@@ -1,22 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\rijoa\\source\\repos\\EasyReadsBackend\\",
+  "WorkspaceRootPath": "C:\\AIUB\\ADVANCE PROGRAMMING WITH .NET\\EasyReadsBackend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B1B9D0A0-1F6D-4538-A741-4BB465FE308B}|EasyReadsDAL\\EasyReadsDAL.csproj|c:\\users\\rijoa\\source\\repos\\easyreadsbackend\\easyreadsdal\\repos\\articlerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1B9D0A0-1F6D-4538-A741-4BB465FE308B}|EasyReadsDAL\\EasyReadsDAL.csproj|solutionrelative:easyreadsdal\\repos\\articlerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{324928C6-2B76-409A-A4FC-8DCF6D8644E2}|EasyReadsAPI\\EasyReadsAPI.csproj|c:\\aiub\\advance programming with .net\\easyreadsbackend\\easyreadsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{324928C6-2B76-409A-A4FC-8DCF6D8644E2}|EasyReadsAPI\\EasyReadsAPI.csproj|solutionrelative:easyreadsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BF1666E-7233-41E3-B247-1F4F78FE619F}|EasyReadsBLL\\EasyReadsBLL.csproj|c:\\users\\rijoa\\source\\repos\\easyreadsbackend\\easyreadsbll\\services\\articleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BF1666E-7233-41E3-B247-1F4F78FE619F}|EasyReadsBLL\\EasyReadsBLL.csproj|solutionrelative:easyreadsbll\\services\\articleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{324928C6-2B76-409A-A4FC-8DCF6D8644E2}|EasyReadsAPI\\EasyReadsAPI.csproj|c:\\aiub\\advance programming with .net\\easyreadsbackend\\easyreadsapi\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{324928C6-2B76-409A-A4FC-8DCF6D8644E2}|EasyReadsAPI\\EasyReadsAPI.csproj|solutionrelative:easyreadsapi\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{324928C6-2B76-409A-A4FC-8DCF6D8644E2}|EasyReadsAPI\\EasyReadsAPI.csproj|c:\\users\\rijoa\\source\\repos\\easyreadsbackend\\easyreadsapi\\controllers\\articlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{324928C6-2B76-409A-A4FC-8DCF6D8644E2}|EasyReadsAPI\\EasyReadsAPI.csproj|solutionrelative:easyreadsapi\\controllers\\articlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2BF1666E-7233-41E3-B247-1F4F78FE619F}|EasyReadsBLL\\EasyReadsBLL.csproj|c:\\aiub\\advance programming with .net\\easyreadsbackend\\easyreadsbll\\services\\commentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BF1666E-7233-41E3-B247-1F4F78FE619F}|EasyReadsBLL\\EasyReadsBLL.csproj|solutionrelative:easyreadsbll\\services\\commentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{324928C6-2B76-409A-A4FC-8DCF6D8644E2}|EasyReadsAPI\\EasyReadsAPI.csproj|c:\\users\\rijoa\\source\\repos\\easyreadsbackend\\easyreadsapi\\controllers\\topiccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{324928C6-2B76-409A-A4FC-8DCF6D8644E2}|EasyReadsAPI\\EasyReadsAPI.csproj|solutionrelative:easyreadsapi\\controllers\\topiccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1B9D0A0-1F6D-4538-A741-4BB465FE308B}|EasyReadsDAL\\EasyReadsDAL.csproj|c:\\aiub\\advance programming with .net\\easyreadsbackend\\easyreadsdal\\repos\\commentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1B9D0A0-1F6D-4538-A741-4BB465FE308B}|EasyReadsDAL\\EasyReadsDAL.csproj|solutionrelative:easyreadsdal\\repos\\commentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B9D0A0-1F6D-4538-A741-4BB465FE308B}|EasyReadsDAL\\EasyReadsDAL.csproj|c:\\aiub\\advance programming with .net\\easyreadsbackend\\easyreadsdal\\interfaces\\icommentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1B9D0A0-1F6D-4538-A741-4BB465FE308B}|EasyReadsDAL\\EasyReadsDAL.csproj|solutionrelative:easyreadsdal\\interfaces\\icommentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B9D0A0-1F6D-4538-A741-4BB465FE308B}|EasyReadsDAL\\EasyReadsDAL.csproj|c:\\aiub\\advance programming with .net\\easyreadsbackend\\easyreadsdal\\ef\\entities\\reply.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1B9D0A0-1F6D-4538-A741-4BB465FE308B}|EasyReadsDAL\\EasyReadsDAL.csproj|solutionrelative:easyreadsdal\\ef\\entities\\reply.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BF1666E-7233-41E3-B247-1F4F78FE619F}|EasyReadsBLL\\EasyReadsBLL.csproj|c:\\aiub\\advance programming with .net\\easyreadsbackend\\easyreadsbll\\services\\bookmarkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BF1666E-7233-41E3-B247-1F4F78FE619F}|EasyReadsBLL\\EasyReadsBLL.csproj|solutionrelative:easyreadsbll\\services\\bookmarkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1B9D0A0-1F6D-4538-A741-4BB465FE308B}|EasyReadsDAL\\EasyReadsDAL.csproj|c:\\aiub\\advance programming with .net\\easyreadsbackend\\easyreadsdal\\ef\\entities\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1B9D0A0-1F6D-4538-A741-4BB465FE308B}|EasyReadsDAL\\EasyReadsDAL.csproj|solutionrelative:easyreadsdal\\ef\\entities\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,53 +51,105 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ArticleRepo.cs",
-              "DocumentMoniker": "C:\\Users\\rijoa\\source\\repos\\EasyReadsBackend\\EasyReadsDAL\\Repos\\ArticleRepo.cs",
-              "RelativeDocumentMoniker": "EasyReadsDAL\\Repos\\ArticleRepo.cs",
-              "ToolTip": "C:\\Users\\rijoa\\source\\repos\\EasyReadsBackend\\EasyReadsDAL\\Repos\\ArticleRepo.cs",
-              "RelativeToolTip": "EasyReadsDAL\\Repos\\ArticleRepo.cs",
-              "ViewState": "AQIAADAAAAAAAAAAAAAmwEAAAAAsAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\AIUB\\ADVANCE PROGRAMMING WITH .NET\\EasyReadsBackend\\EasyReadsAPI\\Program.cs",
+              "RelativeDocumentMoniker": "EasyReadsAPI\\Program.cs",
+              "ToolTip": "C:\\AIUB\\ADVANCE PROGRAMMING WITH .NET\\EasyReadsBackend\\EasyReadsAPI\\Program.cs",
+              "RelativeToolTip": "EasyReadsAPI\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T00:58:54.54Z",
+              "WhenOpened": "2024-05-13T04:19:47.847Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TopicController.cs",
-              "DocumentMoniker": "C:\\Users\\rijoa\\source\\repos\\EasyReadsBackend\\EasyReadsAPI\\Controllers\\TopicController.cs",
-              "RelativeDocumentMoniker": "EasyReadsAPI\\Controllers\\TopicController.cs",
-              "ToolTip": "C:\\Users\\rijoa\\source\\repos\\EasyReadsBackend\\EasyReadsAPI\\Controllers\\TopicController.cs",
-              "RelativeToolTip": "EasyReadsAPI\\Controllers\\TopicController.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAowAAAAAAAAAAA",
+              "DocumentIndex": 4,
+              "Title": "ICommentRepo.cs",
+              "DocumentMoniker": "C:\\AIUB\\ADVANCE PROGRAMMING WITH .NET\\EasyReadsBackend\\EasyReadsDAL\\Interfaces\\ICommentRepo.cs",
+              "RelativeDocumentMoniker": "EasyReadsDAL\\Interfaces\\ICommentRepo.cs",
+              "ToolTip": "C:\\AIUB\\ADVANCE PROGRAMMING WITH .NET\\EasyReadsBackend\\EasyReadsDAL\\Interfaces\\ICommentRepo.cs",
+              "RelativeToolTip": "EasyReadsDAL\\Interfaces\\ICommentRepo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T00:51:04.681Z",
+              "WhenOpened": "2024-05-13T04:15:15.702Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ArticleService.cs",
-              "DocumentMoniker": "C:\\Users\\rijoa\\source\\repos\\EasyReadsBackend\\EasyReadsBLL\\Services\\ArticleService.cs",
-              "RelativeDocumentMoniker": "EasyReadsBLL\\Services\\ArticleService.cs",
-              "ToolTip": "C:\\Users\\rijoa\\source\\repos\\EasyReadsBackend\\EasyReadsBLL\\Services\\ArticleService.cs",
-              "RelativeToolTip": "EasyReadsBLL\\Services\\ArticleService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAxAAAA",
+              "DocumentIndex": 5,
+              "Title": "Reply.cs",
+              "DocumentMoniker": "C:\\AIUB\\ADVANCE PROGRAMMING WITH .NET\\EasyReadsBackend\\EasyReadsDAL\\EF\\Entities\\Reply.cs",
+              "RelativeDocumentMoniker": "EasyReadsDAL\\EF\\Entities\\Reply.cs",
+              "ToolTip": "C:\\AIUB\\ADVANCE PROGRAMMING WITH .NET\\EasyReadsBackend\\EasyReadsDAL\\EF\\Entities\\Reply.cs",
+              "RelativeToolTip": "EasyReadsDAL\\EF\\Entities\\Reply.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T00:45:32.086Z",
+              "WhenOpened": "2024-05-13T04:00:20.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BookmarkService.cs",
+              "DocumentMoniker": "C:\\AIUB\\ADVANCE PROGRAMMING WITH .NET\\EasyReadsBackend\\EasyReadsBLL\\Services\\BookmarkService.cs",
+              "RelativeDocumentMoniker": "EasyReadsBLL\\Services\\BookmarkService.cs",
+              "ToolTip": "C:\\AIUB\\ADVANCE PROGRAMMING WITH .NET\\EasyReadsBackend\\EasyReadsBLL\\Services\\BookmarkService.cs",
+              "RelativeToolTip": "EasyReadsBLL\\Services\\BookmarkService.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAIwDYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T03:52:42.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Comment.cs",
+              "DocumentMoniker": "C:\\AIUB\\ADVANCE PROGRAMMING WITH .NET\\EasyReadsBackend\\EasyReadsDAL\\EF\\Entities\\Comment.cs",
+              "RelativeDocumentMoniker": "EasyReadsDAL\\EF\\Entities\\Comment.cs",
+              "ToolTip": "C:\\AIUB\\ADVANCE PROGRAMMING WITH .NET\\EasyReadsBackend\\EasyReadsDAL\\EF\\Entities\\Comment.cs",
+              "RelativeToolTip": "EasyReadsDAL\\EF\\Entities\\Comment.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T03:38:05.566Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ArticleController.cs",
-              "DocumentMoniker": "C:\\Users\\rijoa\\source\\repos\\EasyReadsBackend\\EasyReadsAPI\\Controllers\\ArticleController.cs",
-              "RelativeDocumentMoniker": "EasyReadsAPI\\Controllers\\ArticleController.cs",
-              "ToolTip": "C:\\Users\\rijoa\\source\\repos\\EasyReadsBackend\\EasyReadsAPI\\Controllers\\ArticleController.cs",
-              "RelativeToolTip": "EasyReadsAPI\\Controllers\\ArticleController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "CommentService.cs",
+              "DocumentMoniker": "C:\\AIUB\\ADVANCE PROGRAMMING WITH .NET\\EasyReadsBackend\\EasyReadsBLL\\Services\\CommentService.cs",
+              "RelativeDocumentMoniker": "EasyReadsBLL\\Services\\CommentService.cs",
+              "ToolTip": "C:\\AIUB\\ADVANCE PROGRAMMING WITH .NET\\EasyReadsBackend\\EasyReadsBLL\\Services\\CommentService.cs",
+              "RelativeToolTip": "EasyReadsBLL\\Services\\CommentService.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAowDkAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T00:45:21.722Z",
+              "WhenOpened": "2024-05-13T03:35:41.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CommentController.cs",
+              "DocumentMoniker": "C:\\AIUB\\ADVANCE PROGRAMMING WITH .NET\\EasyReadsBackend\\EasyReadsAPI\\Controllers\\CommentController.cs",
+              "RelativeDocumentMoniker": "EasyReadsAPI\\Controllers\\CommentController.cs",
+              "ToolTip": "C:\\AIUB\\ADVANCE PROGRAMMING WITH .NET\\EasyReadsBackend\\EasyReadsAPI\\Controllers\\CommentController.cs",
+              "RelativeToolTip": "EasyReadsAPI\\Controllers\\CommentController.cs",
+              "ViewState": "AQIAAFMAAAAAAAAAAAAuwHsAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T03:35:23.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CommentRepo.cs",
+              "DocumentMoniker": "C:\\AIUB\\ADVANCE PROGRAMMING WITH .NET\\EasyReadsBackend\\EasyReadsDAL\\Repos\\CommentRepo.cs",
+              "RelativeDocumentMoniker": "EasyReadsDAL\\Repos\\CommentRepo.cs",
+              "ToolTip": "C:\\AIUB\\ADVANCE PROGRAMMING WITH .NET\\EasyReadsBackend\\EasyReadsDAL\\Repos\\CommentRepo.cs",
+              "RelativeToolTip": "EasyReadsDAL\\Repos\\CommentRepo.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwCoAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T03:24:51.169Z",
               "EditorCaption": ""
             }
           ]

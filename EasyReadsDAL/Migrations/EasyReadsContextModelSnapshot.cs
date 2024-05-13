@@ -62,11 +62,16 @@ namespace EasyReadsDAL.Migrations
                         .HasMaxLength(250)
                         .HasColumnType("varchar(250)");
 
+                    b.Property<int>("TopicId")
+                        .HasColumnType("int");
+
                     b.Property<string>("WrittenBy")
                         .IsRequired()
                         .HasColumnType("varchar(30)");
 
                     b.HasKey("ArticleId");
+
+                    b.HasIndex("TopicId");
 
                     b.HasIndex("WrittenBy");
 
@@ -343,6 +348,12 @@ namespace EasyReadsDAL.Migrations
 
             modelBuilder.Entity("EasyReadsDAL.EF.Entities.Article", b =>
                 {
+                    b.HasOne("EasyReadsDAL.EF.Entities.Topic", "Topic")
+                        .WithMany()
+                        .HasForeignKey("TopicId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("EasyReadsDAL.EF.Entities.User", "Author")
                         .WithMany()
                         .HasForeignKey("WrittenBy")
@@ -350,6 +361,8 @@ namespace EasyReadsDAL.Migrations
                         .IsRequired();
 
                     b.Navigation("Author");
+
+                    b.Navigation("Topic");
                 });
 
             modelBuilder.Entity("EasyReadsDAL.EF.Entities.ArticleVersion", b =>

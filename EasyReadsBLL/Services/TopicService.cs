@@ -21,8 +21,6 @@ namespace EasyReadsBLL.Services
 			topic1.AddDate = DateTime.Now;
 
 			_dataAccessFactory.TopicData().Create(topic1);
-
-
         }
 
 		public List<TopicDTO> GetAllTopic()
@@ -35,7 +33,7 @@ namespace EasyReadsBLL.Services
 
 		}
 
-        public TopicDTO? getTopic(int id)
+        public TopicDTO? GetTopic(int id)
         {
             var singleTopic = _dataAccessFactory.TopicData().Get(id);
            if(singleTopic != null)
@@ -47,8 +45,6 @@ namespace EasyReadsBLL.Services
             {
                 return null;
             }
-
-          
         }
 
         public void UpdateTopic(TopicDTO topic)
@@ -62,6 +58,24 @@ namespace EasyReadsBLL.Services
            
         }
 
+        public void FollowTopic(UserTopicDTO userTopicDTO)
+        {
+            UserTopic userTopic = new UserTopic();
+            userTopic.TopicId = userTopicDTO.TopicId;
+            userTopic.Username = userTopicDTO.Username;
+            userTopic.TimeStamp = DateTime.Now;
+            _dataAccessFactory.TopicData().AddUserTopic(userTopic);
+            _dataAccessFactory.TopicData().AddFollowerCount(userTopicDTO.TopicId);
+        }
+
+        public void UnFollowTopic(UserTopicDTO userTopicDTO)
+        {
+            UserTopic userTopic = new UserTopic();
+            userTopic.TopicId = userTopicDTO.TopicId;
+            userTopic.Username = userTopicDTO.Username;
+            _dataAccessFactory.TopicData().RemoveUserTopic(userTopic);
+            _dataAccessFactory.TopicData().DecFollowerCount(userTopicDTO.TopicId);
+        }
 
         public List<TopicDTO> Convert(List<Topic> topics)
         {
@@ -84,9 +98,6 @@ namespace EasyReadsBLL.Services
                
             };
         }
-
-
-
     }
 }
 

@@ -14,9 +14,7 @@ namespace EasyReadsAPI.Controllers
     [ApiController]
     public class TopicController : Controller
     {
-
         private readonly TopicService _topicService;
-
         public TopicController(TopicService topicService)
         {
             _topicService = topicService;
@@ -33,27 +31,22 @@ namespace EasyReadsAPI.Controllers
                 _topicService.Create(topic);
                 return Ok();
             }
-
-
             return BadRequest(ModelState);
-
-
         }
 
         [HttpGet]
         [Route("GetAllTopic")]
         public IActionResult GetAllTopic()
         {
-          var allData = _topicService.GetAllTopic();
+            var allData = _topicService.GetAllTopic();
             return Ok(allData);
-
         }
 
         [HttpGet]
         [Route("GetTopic/{id}")]
         public IActionResult getTopicById(int id)
         {
-            var topic = _topicService.getTopic(id);
+            var topic = _topicService.GetTopic(id);
 
             if(topic != null)
             {
@@ -73,14 +66,27 @@ namespace EasyReadsAPI.Controllers
             return Ok();
         }
 
+        [HttpPost]
+        [Route("FollowTopic/{id}")]
+        public IActionResult FollowTopic (UserTopicDTO userTopicDTO)
+        {
+            if (ModelState.IsValid)
+            {
+                _topicService.FollowTopic(userTopicDTO);
+            }
+            return BadRequest(ModelState);
+        }
 
-
-
-
-
-
-
-
+        [HttpDelete]
+        [Route("UnFollowTopic/{id}")]
+        public IActionResult UnFollowTopic(UserTopicDTO userTopicDTO)
+        {
+            if (ModelState.IsValid)
+            {
+                _topicService.UnFollowTopic(userTopicDTO);
+            }
+            return BadRequest(ModelState);
+        }
     }
 }
 

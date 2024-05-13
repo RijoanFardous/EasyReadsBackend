@@ -1,27 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rijoa\\source\\repos\\EasyReadsBackend\\EasyReadsDAL\\EasyReadsDAL.csproj": {}
+    "/Users/sabihakhairohi/Downloads/EasyReadsBackend/EasyReadsDAL/EasyReadsDAL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rijoa\\source\\repos\\EasyReadsBackend\\EasyReadsDAL\\EasyReadsDAL.csproj": {
+    "/Users/sabihakhairohi/Downloads/EasyReadsBackend/EasyReadsDAL/EasyReadsDAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rijoa\\source\\repos\\EasyReadsBackend\\EasyReadsDAL\\EasyReadsDAL.csproj",
+        "projectUniqueName": "/Users/sabihakhairohi/Downloads/EasyReadsBackend/EasyReadsDAL/EasyReadsDAL.csproj",
         "projectName": "EasyReadsDAL",
-        "projectPath": "C:\\Users\\rijoa\\source\\repos\\EasyReadsBackend\\EasyReadsDAL\\EasyReadsDAL.csproj",
-        "packagesPath": "C:\\Users\\rijoa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rijoa\\source\\repos\\EasyReadsBackend\\EasyReadsDAL\\obj\\",
+        "projectPath": "/Users/sabihakhairohi/Downloads/EasyReadsBackend/EasyReadsDAL/EasyReadsDAL.csproj",
+        "packagesPath": "/Users/sabihakhairohi/.nuget/packages/",
+        "outputPath": "/Users/sabihakhairohi/Downloads/EasyReadsBackend/EasyReadsDAL/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\rijoa\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/sabihakhairohi/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -75,12 +74,22 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.17, 7.0.17]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.17, 7.0.17]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/RuntimeIdentifierGraph.json"
         }
       }
     }

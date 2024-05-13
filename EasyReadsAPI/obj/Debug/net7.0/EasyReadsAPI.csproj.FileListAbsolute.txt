@@ -125,3 +125,46 @@ C:\Users\rijoa\source\repos\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\refin
 C:\Users\rijoa\source\repos\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\EasyReadsAPI.pdb
 C:\Users\rijoa\source\repos\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\EasyReadsAPI.genruntimeconfig.cache
 C:\Users\rijoa\source\repos\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\ref\EasyReadsAPI.dll
+C:\AIUB\ADVANCE PROGRAMMING WITH .NET\EasyReadsBackend\EasyReadsAPI\bin\Debug\net7.0\appsettings.Development.json
+C:\AIUB\ADVANCE PROGRAMMING WITH .NET\EasyReadsBackend\EasyReadsAPI\bin\Debug\net7.0\appsettings.json
+C:\AIUB\ADVANCE PROGRAMMING WITH .NET\EasyReadsBackend\EasyReadsAPI\bin\Debug\net7.0\EasyReadsAPI.exe
+C:\AIUB\ADVANCE PROGRAMMING WITH .NET\EasyReadsBackend\EasyReadsAPI\bin\Debug\net7.0\EasyReadsAPI.deps.json
+C:\AIUB\ADVANCE PROGRAMMING WITH .NET\EasyReadsBackend\EasyReadsAPI\bin\Debug\net7.0\EasyReadsAPI.runtimeconfig.json
+C:\AIUB\ADVANCE PROGRAMMING WITH .NET\EasyReadsBackend\EasyReadsAPI\bin\Debug\net7.0\EasyReadsAPI.dll
+C:\AIUB\ADVANCE PROGRAMMING WITH .NET\EasyReadsBackend\EasyReadsAPI\bin\Debug\net7.0\EasyReadsAPI.pdb
+C:\AIUB\ADVANCE PROGRAMMING WITH .NET\EasyReadsBackend\EasyReadsAPI\bin\Debug\net7.0\BCrypt.Net-Core.dll
+C:\AIUB\ADVANCE PROGRAMMING WITH .NET\EasyReadsBackend\EasyReadsAPI\bin\Debug\net7.0\Humanizer.dll
+C:\AIUB\ADVANCE PROGRAMMING WITH .NET\EasyReadsBackend\EasyReadsAPI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\AIUB\ADVANCE PROGRAMMING WITH .NET\EasyReadsBackend\EasyReadsAPI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\AIUB\ADVANCE PROGRAMMING WITH .NET\EasyReadsBackend\EasyReadsAPI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\AIUB\ADVANCE PROGRAMMING WITH .NET\EasyReadsBackend\EasyReadsAPI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\AIUB\ADVANCE PROGRAMMING WITH .NET\EasyReadsBackend\EasyReadsAPI\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\AIUB\ADVANCE PROGRAMMING WITH .NET\EasyReadsBackend\EasyReadsAPI\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\AIUB\ADVANCE PROGRAMMING WITH .NET\EasyReadsBackend\EasyReadsAPI\bin\Debug\net7.0\MySqlConnector.dll
+C:\AIUB\ADVANCE PROGRAMMING WITH .NET\EasyReadsBackend\EasyReadsAPI\bin\Debug\net7.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\AIUB\ADVANCE PROGRAMMING WITH .NET\EasyReadsBackend\EasyReadsAPI\bin\Debug\net7.0\System.CodeDom.dll
+C:\AIUB\ADVANCE PROGRAMMING WITH .NET\EasyReadsBackend\EasyReadsAPI\bin\Debug\net7.0\EasyReadsBLL.dll
+C:\AIUB\ADVANCE PROGRAMMING WITH .NET\EasyReadsBackend\EasyReadsAPI\bin\Debug\net7.0\EasyReadsDAL.dll
+C:\AIUB\ADVANCE PROGRAMMING WITH .NET\EasyReadsBackend\EasyReadsAPI\bin\Debug\net7.0\EasyReadsBLL.pdb
+C:\AIUB\ADVANCE PROGRAMMING WITH .NET\EasyReadsBackend\EasyReadsAPI\bin\Debug\net7.0\EasyReadsDAL.pdb
+C:\AIUB\ADVANCE PROGRAMMING WITH .NET\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\EasyReadsAPI.csproj.AssemblyReference.cache
+C:\AIUB\ADVANCE PROGRAMMING WITH .NET\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\EasyReadsAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\AIUB\ADVANCE PROGRAMMING WITH .NET\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\EasyReadsAPI.AssemblyInfoInputs.cache
+C:\AIUB\ADVANCE PROGRAMMING WITH .NET\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\EasyReadsAPI.AssemblyInfo.cs
+C:\AIUB\ADVANCE PROGRAMMING WITH .NET\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\EasyReadsAPI.csproj.CoreCompileInputs.cache
+C:\AIUB\ADVANCE PROGRAMMING WITH .NET\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\EasyReadsAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\AIUB\ADVANCE PROGRAMMING WITH .NET\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\EasyReadsAPI.sourcelink.json
+C:\AIUB\ADVANCE PROGRAMMING WITH .NET\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\staticwebassets.build.json
+C:\AIUB\ADVANCE PROGRAMMING WITH .NET\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\staticwebassets.development.json
+C:\AIUB\ADVANCE PROGRAMMING WITH .NET\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\staticwebassets\msbuild.EasyReadsAPI.Microsoft.AspNetCore.StaticWebAssets.props
+C:\AIUB\ADVANCE PROGRAMMING WITH .NET\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\staticwebassets\msbuild.build.EasyReadsAPI.props
+C:\AIUB\ADVANCE PROGRAMMING WITH .NET\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.EasyReadsAPI.props
+C:\AIUB\ADVANCE PROGRAMMING WITH .NET\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.EasyReadsAPI.props
+C:\AIUB\ADVANCE PROGRAMMING WITH .NET\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\staticwebassets.pack.json
+C:\AIUB\ADVANCE PROGRAMMING WITH .NET\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\scopedcss\bundle\EasyReadsAPI.styles.css
+C:\AIUB\ADVANCE PROGRAMMING WITH .NET\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\EasyRead.3348F51E.Up2Date
+C:\AIUB\ADVANCE PROGRAMMING WITH .NET\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\EasyReadsAPI.dll
+C:\AIUB\ADVANCE PROGRAMMING WITH .NET\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\refint\EasyReadsAPI.dll
+C:\AIUB\ADVANCE PROGRAMMING WITH .NET\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\EasyReadsAPI.pdb
+C:\AIUB\ADVANCE PROGRAMMING WITH .NET\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\EasyReadsAPI.genruntimeconfig.cache
+C:\AIUB\ADVANCE PROGRAMMING WITH .NET\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\ref\EasyReadsAPI.dll
