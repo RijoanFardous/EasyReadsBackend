@@ -15,5 +15,7 @@ namespace EasyReadsDAL.Interfaces
         public void Update(Bookmark bookmark);
         public Bookmark? GetBookmark(int id);
         public List<Bookmark> GetBookmarks(string username);
+        public List<Bookmark> GetArticleBookmarks(int articleId);
+        public List<Bookmark> GetArticleBookmarksByDate(int articleId, DateTime startdate, DateTime enddate);
     }
 }

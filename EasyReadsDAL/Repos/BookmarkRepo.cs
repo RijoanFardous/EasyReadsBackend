@@ -43,6 +43,20 @@ namespace EasyReadsDAL.Repos
             _db.SaveChanges();
         }
 
+        public List<Bookmark> GetArticleBookmarks(int articleId)
+        {
+            var bookmarks = (from b in _db.Bookmarks where b.ArticleId == articleId select b).ToList();
+            return bookmarks;
+        }
+
+        public List<Bookmark> GetArticleBookmarksByDate(int articleId, DateTime startdate, DateTime enddate)
+        {
+            var bookmarks = (from b in _db.Bookmarks 
+                             where b.ArticleId == articleId && b.TimeStamp >= startdate && b.TimeStamp <= enddate
+                             select b).ToList();
+            return bookmarks;
+        }
+
         public Bookmark? GetBookmark(int id)
         {
             return _db.Bookmarks.Find(id);

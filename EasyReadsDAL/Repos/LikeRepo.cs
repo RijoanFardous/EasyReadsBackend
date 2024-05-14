@@ -51,5 +51,13 @@ namespace EasyReadsDAL.Repos
 
             return data;
         }
+
+        public List<Like> GetAllLikesByDate(int articleId, DateTime startdate, DateTime enddate)
+        {
+            var data = (from like in _db.Likes 
+                        where like.ArticleId == articleId && like.LikedAt >= startdate && like.LikedAt <= enddate
+                        select like).ToList();
+            return data;
+        }
     }
 }

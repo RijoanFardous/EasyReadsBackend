@@ -19,12 +19,19 @@ namespace EasyReadsAPI.Controllers
         [Route("create")]
         public IActionResult CreateComment(CommentDTO commentDTO)
         {
-            if(ModelState.IsValid)
+            try
             {
-                _commentService.CreateComment(commentDTO);
-                return Ok();
+                if (ModelState.IsValid)
+                {
+                    _commentService.CreateComment(commentDTO);
+                    return Ok();
+                }
+                return BadRequest(ModelState);
+
+            }catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
             }
-            return BadRequest(ModelState);
         }
 
         [HttpGet]

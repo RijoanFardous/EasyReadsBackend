@@ -15,7 +15,7 @@ namespace EasyReadsAPI.Controllers
         }
 
         [HttpGet]
-        [Route("/{keyword}")]
+        [Route("{keyword}")]
         public IActionResult Search(string keyword)
         {
             if(keyword == null)

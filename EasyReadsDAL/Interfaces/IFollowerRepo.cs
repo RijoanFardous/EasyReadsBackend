@@ -14,6 +14,7 @@ namespace EasyReadsDAL.Interfaces
         void Delete(Follower obj);
         Follower? Get(int id);
         List<Follower> GetAllFollowers(string username);
+        List<Follower> GetAllFollowersByDate(string username, DateTime startdate, DateTime enddate);
         List<Follower> GetAllFollowings(string username);
         void DeleteAllFollowers(string username);
         void DeleteAllFollowings(string username);

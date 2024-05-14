@@ -64,6 +64,14 @@ namespace EasyReadsDAL.Repos
             return data;
         }
 
+        public List<Comment> GetAllCommentsByDate(int articleId, DateTime startdate, DateTime enddate)
+        {
+            var data = (from comment in _db.Comments 
+                        where comment.ArticleId == articleId && comment.TimeStamp >= startdate && comment.TimeStamp <= enddate
+                        select comment).ToList();
+            return data;
+        }
+
         public List<Reply> GetAllReplies(int commentId)
         {
             var data = (from reply in _db.Replies where reply.CommentId == commentId select reply).ToList();

@@ -44,6 +44,16 @@ namespace EasyReadsBLL.Services
 
         }
 
+        public List<ArticleDTO> Convert(List<Article> articles)
+        {
+            var data = new List<ArticleDTO>();
+            foreach (var article in articles)
+            {
+                data.Add(Convert(article));
+            }
+            return data;
+        }
+
         public ArticleDTO Convert(Article article)
         {
             return new ArticleDTO

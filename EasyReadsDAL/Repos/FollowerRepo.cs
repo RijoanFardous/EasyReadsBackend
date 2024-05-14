@@ -66,6 +66,12 @@ namespace EasyReadsDAL.Repos
             return data;
         }
 
+        public List<Follower> GetAllFollowersByDate(string username, DateTime startdate, DateTime enddate)
+        {
+            var data = (from f in _db.Followers where f.FollowedUsername.Equals(username) && f.FollowedAt >= startdate && f.FollowedAt <= enddate select f).ToList();
+            return data;
+        }
+
         public List<Follower> GetAllFollowings(string username)
         {
             var data = (from f in _db.Followers where f.FollowerUsername.Equals(username) select f).ToList();

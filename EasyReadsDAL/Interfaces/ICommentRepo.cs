@@ -15,6 +15,8 @@ namespace EasyReadsDAL.Interfaces
         public void UpdateComment(Comment comment);
         public Comment? GetComment(int id);
         public List<Comment> GetAllComments(int articleId);
+        public List<Comment> GetAllCommentsByDate(int articleId, DateTime startdate, DateTime enddate);
+
 
         // Replies
         public void CreateReply(Reply reply);

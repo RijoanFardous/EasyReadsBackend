@@ -21,6 +21,11 @@ builder.Services.AddScoped<TopicService>();
 builder.Services.AddScoped<BookmarkService>();
 builder.Services.AddScoped<CommentService>();
 builder.Services.AddScoped<DataAccessFactory>();
+builder.Services.AddScoped<ApplicationService>();
+builder.Services.AddScoped<ReportService>();
+builder.Services.AddScoped<SearchService>();
+builder.Services.AddScoped<LikeService>();
+builder.Services.AddScoped<FollowerService>();
 builder.Services.AddScoped<LoggedAttribute>();
 builder.Services.AddScoped<AuthorAttribute>();
 
