@@ -15,6 +15,8 @@ namespace EasyReadsDAL.Interfaces
         Follower? Get(int id);
         List<Follower> GetAllFollowers(string username);
         List<Follower> GetAllFollowings(string username);
+        void DeleteAllFollowers(string username);
+        void DeleteAllFollowings(string username);
         bool IsFollowing(Follower obj);
     }
 }

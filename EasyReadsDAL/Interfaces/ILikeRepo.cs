@@ -12,5 +12,6 @@ namespace EasyReadsDAL.Interfaces
         void Create(Like obj);
         void Delete(Like obj);
         List<Like> GetAllLikes(int articleId);
+        void DeleteAllLikes(int articleId);
     }
 }

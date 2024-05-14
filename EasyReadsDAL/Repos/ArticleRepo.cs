@@ -97,5 +97,10 @@ namespace EasyReadsDAL.Repos
         {
             throw new NotImplementedException();
         }
+
+        public List<Article> GetAllPublicArticles()
+        {
+            return (from article in _context.Articles where article.Audience.Equals("Public") select article).ToList();
+        }
     }
 }

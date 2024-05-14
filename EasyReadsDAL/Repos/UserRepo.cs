@@ -70,5 +70,15 @@ namespace EasyReadsDAL.Repos
             user.HashedPassword = password;
             _context.SaveChanges();
         }
+
+        public void MemberToAuthor(string username)
+        {
+            var user = GetUser(username);
+            if (user != null)
+            {
+                user.UserType = "Author";
+                _context.SaveChanges();
+            }
+        }
     }
 }

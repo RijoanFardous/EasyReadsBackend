@@ -35,6 +35,16 @@ namespace EasyReadsDAL.Repos
             }
         }
 
+        public void DeleteAllLikes(int articleId)
+        {
+            var data = (from like in _db.Likes where like.ArticleId == articleId select like).ToList();
+            foreach (var like in data)
+            {
+                _db.Likes.Remove(like);
+            }
+            _db.SaveChanges();
+        }
+
         public List<Like> GetAllLikes(int articleId)
         {
             var data = (from like in _db.Likes where like.ArticleId == articleId select like).ToList();

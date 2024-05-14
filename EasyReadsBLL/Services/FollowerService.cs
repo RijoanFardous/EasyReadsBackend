@@ -22,12 +22,16 @@ namespace EasyReadsBLL.Services
             Follower follower = Convert(data);
             follower.FollowedAt = DateTime.Now;
             _dataAccessFactory.FollowerData().Create(follower);
+            _dataAccessFactory.ProfileData().IncFollowerCount(follower.FollowedUsername);
+            _dataAccessFactory.ProfileData().IncFollowingCount(follower.FollowerUsername);
         }
 
         public void DeleteFollower(FollowerDTO data)
         {
             Follower follower = Convert(data);
             _dataAccessFactory.FollowerData().Delete(follower);
+            _dataAccessFactory.ProfileData().DecFollowerCount(follower.FollowedUsername);
+            _dataAccessFactory.ProfileData().DecFollowingCount(follower.FollowerUsername);
         }
 
         public List<FollowerDTO> GetAllFollowers(string username)

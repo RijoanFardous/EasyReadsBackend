@@ -16,5 +16,6 @@ namespace EasyReadsDAL.Interfaces
         bool IsUniqueEmail(string email);
         void ChangePass(string username, string password);
         void UpdateFullName(string username, string fullname);
+        void MemberToAuthor(string username);
     }
 }

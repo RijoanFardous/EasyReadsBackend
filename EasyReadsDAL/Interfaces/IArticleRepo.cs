@@ -14,6 +14,7 @@ namespace EasyReadsDAL.Interfaces
         void DeleteArticle(int id);
         Article? GetArticle(int id);
         List<Article> GetAllArticles();
+        List<Article> GetAllPublicArticles();
         List<Article> GetAllArticlesOfAuthor(string username);
         List<Article> GetAllArticlesOfTopic(int topicId);
         List<Article> GetPublicArticlesofAuthor(string username);

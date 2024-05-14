@@ -63,5 +63,15 @@ namespace EasyReadsDAL
         {
             return new LikeRepo(_context);
         }
+
+        public IApplicationRepo ApplicationData()
+        {
+            return new ApplicationRepo(_context);
+        }
+
+        public IReportRepo ReportData()
+        {
+            return new ReportRepo(_context);
+        }
     }
 }

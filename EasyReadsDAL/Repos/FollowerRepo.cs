@@ -35,6 +35,26 @@ namespace EasyReadsDAL.Repos
             }
         }
 
+        public void DeleteAllFollowers(string username)
+        {
+            var data = (from f in _db.Followers where f.FollowedUsername.Equals(username) select f).ToList();
+            foreach(var follower in data)
+            {
+                _db.Followers.Remove(follower);
+            }
+            _db.SaveChanges();
+        }
+
+        public void DeleteAllFollowings(string username)
+        {
+            var data = (from f in _db.Followers where f.FollowerUsername.Equals(username) select f).ToList();
+            foreach(var following in data)
+            {
+                _db.Followers.Remove(following);
+            }
+            _db.SaveChanges();
+        }
+
         public Follower? Get(int id)
         {
             return _db.Followers.Find(id);

@@ -168,3 +168,46 @@ C:\AIUB\ADVANCE PROGRAMMING WITH .NET\EasyReadsBackend\EasyReadsAPI\obj\Debug\ne
 C:\AIUB\ADVANCE PROGRAMMING WITH .NET\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\EasyReadsAPI.pdb
 C:\AIUB\ADVANCE PROGRAMMING WITH .NET\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\EasyReadsAPI.genruntimeconfig.cache
 C:\AIUB\ADVANCE PROGRAMMING WITH .NET\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\ref\EasyReadsAPI.dll
+C:\Users\rijoa\Downloads\EasyReadsBackend\EasyReadsAPI\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\rijoa\Downloads\EasyReadsBackend\EasyReadsAPI\bin\Debug\net7.0\appsettings.json
+C:\Users\rijoa\Downloads\EasyReadsBackend\EasyReadsAPI\bin\Debug\net7.0\EasyReadsAPI.exe
+C:\Users\rijoa\Downloads\EasyReadsBackend\EasyReadsAPI\bin\Debug\net7.0\EasyReadsAPI.deps.json
+C:\Users\rijoa\Downloads\EasyReadsBackend\EasyReadsAPI\bin\Debug\net7.0\EasyReadsAPI.runtimeconfig.json
+C:\Users\rijoa\Downloads\EasyReadsBackend\EasyReadsAPI\bin\Debug\net7.0\EasyReadsAPI.dll
+C:\Users\rijoa\Downloads\EasyReadsBackend\EasyReadsAPI\bin\Debug\net7.0\EasyReadsAPI.pdb
+C:\Users\rijoa\Downloads\EasyReadsBackend\EasyReadsAPI\bin\Debug\net7.0\BCrypt.Net-Core.dll
+C:\Users\rijoa\Downloads\EasyReadsBackend\EasyReadsAPI\bin\Debug\net7.0\Humanizer.dll
+C:\Users\rijoa\Downloads\EasyReadsBackend\EasyReadsAPI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\rijoa\Downloads\EasyReadsBackend\EasyReadsAPI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\rijoa\Downloads\EasyReadsBackend\EasyReadsAPI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\rijoa\Downloads\EasyReadsBackend\EasyReadsAPI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\rijoa\Downloads\EasyReadsBackend\EasyReadsAPI\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\rijoa\Downloads\EasyReadsBackend\EasyReadsAPI\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Users\rijoa\Downloads\EasyReadsBackend\EasyReadsAPI\bin\Debug\net7.0\MySqlConnector.dll
+C:\Users\rijoa\Downloads\EasyReadsBackend\EasyReadsAPI\bin\Debug\net7.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\rijoa\Downloads\EasyReadsBackend\EasyReadsAPI\bin\Debug\net7.0\System.CodeDom.dll
+C:\Users\rijoa\Downloads\EasyReadsBackend\EasyReadsAPI\bin\Debug\net7.0\EasyReadsBLL.dll
+C:\Users\rijoa\Downloads\EasyReadsBackend\EasyReadsAPI\bin\Debug\net7.0\EasyReadsDAL.dll
+C:\Users\rijoa\Downloads\EasyReadsBackend\EasyReadsAPI\bin\Debug\net7.0\EasyReadsBLL.pdb
+C:\Users\rijoa\Downloads\EasyReadsBackend\EasyReadsAPI\bin\Debug\net7.0\EasyReadsDAL.pdb
+C:\Users\rijoa\Downloads\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\EasyReadsAPI.csproj.AssemblyReference.cache
+C:\Users\rijoa\Downloads\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\EasyReadsAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rijoa\Downloads\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\EasyReadsAPI.AssemblyInfoInputs.cache
+C:\Users\rijoa\Downloads\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\EasyReadsAPI.AssemblyInfo.cs
+C:\Users\rijoa\Downloads\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\EasyReadsAPI.csproj.CoreCompileInputs.cache
+C:\Users\rijoa\Downloads\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\EasyReadsAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\rijoa\Downloads\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\EasyReadsAPI.sourcelink.json
+C:\Users\rijoa\Downloads\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\rijoa\Downloads\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\rijoa\Downloads\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\staticwebassets\msbuild.EasyReadsAPI.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\rijoa\Downloads\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\staticwebassets\msbuild.build.EasyReadsAPI.props
+C:\Users\rijoa\Downloads\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.EasyReadsAPI.props
+C:\Users\rijoa\Downloads\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.EasyReadsAPI.props
+C:\Users\rijoa\Downloads\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\rijoa\Downloads\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\scopedcss\bundle\EasyReadsAPI.styles.css
+C:\Users\rijoa\Downloads\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\EasyRead.3348F51E.Up2Date
+C:\Users\rijoa\Downloads\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\EasyReadsAPI.dll
+C:\Users\rijoa\Downloads\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\refint\EasyReadsAPI.dll
+C:\Users\rijoa\Downloads\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\EasyReadsAPI.pdb
+C:\Users\rijoa\Downloads\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\EasyReadsAPI.genruntimeconfig.cache
+C:\Users\rijoa\Downloads\EasyReadsBackend\EasyReadsAPI\obj\Debug\net7.0\ref\EasyReadsAPI.dll

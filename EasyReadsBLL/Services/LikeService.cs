@@ -22,12 +22,14 @@ namespace EasyReadsBLL.Services
             Like like = Convert(data);
             like.LikedAt = DateTime.Now;
             _dataAccessFactory.LikeData().Create(like);
+            _dataAccessFactory.ArticleData().IncLikesCount(like.ArticleId);
         }
 
         public void DeleteLike(LikeDTO data)
         {
             Like like = Convert(data);
-            _dataAccessFactory.LikeData().Delete(like); ;
+            _dataAccessFactory.LikeData().Delete(like);
+            _dataAccessFactory.ArticleData().DecLikesCount(like.ArticleId);
         }
 
         public List<LikeDTO> GetAllLikes(int articleId)

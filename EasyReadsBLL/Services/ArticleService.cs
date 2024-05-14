@@ -38,5 +38,30 @@ namespace EasyReadsBLL.Services
             article.NumberOfWords = words.Length;
             _dataAccessFactory.ArticleData().CreateArticle(article);
         }
+
+        public void RemoveArticle(int id)
+        {
+
+        }
+
+        public ArticleDTO Convert(Article article)
+        {
+            return new ArticleDTO
+            {
+                ArticleId = article.ArticleId,
+                Title = article.Title,
+                Content = article.Content,
+                WrittenBy = article.WrittenBy,
+                TopicId = article.TopicId,
+                Audience = article.Audience,
+                CoverImage = article.CoverImage,
+                LikesCount = article.LikesCount,
+                CommentsCount = article.CommentsCount,
+                BookmarksCount = article.BookmarksCount,
+                NumberOfWords = article.NumberOfWords,
+                PostedAt = article.PostedAt,
+                ModifiedAt = article.ModifiedAt,
+            };
+        }
     }
 }

@@ -1061,24 +1061,26 @@
     ]
   },
   "packageFolders": {
-    "/Users/tanvir/.nuget/packages/": {}
+    "C:\\Users\\rijoa\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/tanvir/Downloads/EasyReadsBackend/EasyReadsDAL/EasyReadsDAL.csproj",
+      "projectUniqueName": "C:\\Users\\rijoa\\Downloads\\EasyReadsBackend\\EasyReadsDAL\\EasyReadsDAL.csproj",
       "projectName": "EasyReadsDAL",
-      "projectPath": "/Users/tanvir/Downloads/EasyReadsBackend/EasyReadsDAL/EasyReadsDAL.csproj",
-      "packagesPath": "/Users/tanvir/.nuget/packages/",
-      "outputPath": "/Users/tanvir/Downloads/EasyReadsBackend/EasyReadsDAL/obj/",
+      "projectPath": "C:\\Users\\rijoa\\Downloads\\EasyReadsBackend\\EasyReadsDAL\\EasyReadsDAL.csproj",
+      "packagesPath": "C:\\Users\\rijoa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\rijoa\\Downloads\\EasyReadsBackend\\EasyReadsDAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/tanvir/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\rijoa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1137,7 +1139,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
