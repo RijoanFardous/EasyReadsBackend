@@ -12,6 +12,7 @@ namespace EasyReadsDAL.Interfaces
         // Comments
         public void CreateComment(Comment comment);
         public void DeleteComment(int id);
+        public void DeleteAllComments(int articleId);
         public void UpdateComment(Comment comment);
         public Comment? GetComment(int id);
         public List<Comment> GetAllComments(int articleId);

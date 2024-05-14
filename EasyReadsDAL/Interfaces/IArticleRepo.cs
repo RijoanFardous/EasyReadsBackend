@@ -29,5 +29,11 @@ namespace EasyReadsDAL.Interfaces
         void DecCommentsCount(int id);
         void IncBookmarkCount(int id);
         void DecBookmarkCount(int id);
+
+        void CreateArticleVersion(ArticleVersion version);
+        void DeleteArticleVersion(int id);
+        ArticleVersion? GetArticleVersion(int id);
+        List<ArticleVersion> GetAllArticleVersions(int articleId);
+        void DeleteAllVersions(int articleId);
     }
 }

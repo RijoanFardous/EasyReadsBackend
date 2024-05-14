@@ -28,6 +28,17 @@ namespace EasyReadsDAL.Repos
             _db.SaveChanges();
         }
 
+        public void DeleteAllComments(int articleId)
+        {
+            var comments = (from c in _db.Comments where c.ArticleId == articleId select c).ToList();
+            foreach (var comment in comments)
+            {
+                DeleteAllReplies(comment.CommentId);
+                _db.Comments.Remove(comment);
+            }
+            _db.SaveChanges();
+        }
+
         public void DeleteAllReplies(int commentId)
         {
             var replies = GetAllReplies(commentId);

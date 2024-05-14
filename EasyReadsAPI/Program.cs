@@ -26,6 +26,7 @@ builder.Services.AddScoped<ReportService>();
 builder.Services.AddScoped<SearchService>();
 builder.Services.AddScoped<LikeService>();
 builder.Services.AddScoped<FollowerService>();
+builder.Services.AddScoped<StatsService>();
 builder.Services.AddScoped<LoggedAttribute>();
 builder.Services.AddScoped<AuthorAttribute>();
 

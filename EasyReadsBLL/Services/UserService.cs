@@ -162,6 +162,7 @@ namespace EasyReadsBLL.Services
             {
                 TokenKey = token.TokenKey,
                 Username = token.Username,
+                UserType = token.UserType,
             };
         }
 

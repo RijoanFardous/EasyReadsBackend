@@ -43,6 +43,16 @@ namespace EasyReadsDAL.Repos
             _db.SaveChanges();
         }
 
+        public void DeleteAllByArticle(int articleId)
+        {
+            var bookmarks = (from bookmark in _db.Bookmarks where bookmark.ArticleId == articleId select bookmark).ToList();
+            foreach(var bookmark in bookmarks)
+            {
+                _db.Bookmarks.Remove(bookmark);
+            }
+            _db.SaveChanges();
+        }
+
         public List<Bookmark> GetArticleBookmarks(int articleId)
         {
             var bookmarks = (from b in _db.Bookmarks where b.ArticleId == articleId select b).ToList();

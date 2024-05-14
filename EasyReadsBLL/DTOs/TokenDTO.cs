@@ -13,5 +13,6 @@ namespace EasyReadsBLL.DTOs
     {
         public string TokenKey { get; set; }
         public string Username { get; set; }
+        public string UserType { get; set; }
     }
 }

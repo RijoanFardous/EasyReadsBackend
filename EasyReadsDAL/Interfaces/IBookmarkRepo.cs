@@ -12,6 +12,7 @@ namespace EasyReadsDAL.Interfaces
         public void Create(Bookmark bookmark);
         public void Delete(Bookmark bookmark);
         public void DeleteAll(string username);
+        public void DeleteAllByArticle(int articleId);
         public void Update(Bookmark bookmark);
         public Bookmark? GetBookmark(int id);
         public List<Bookmark> GetBookmarks(string username);
