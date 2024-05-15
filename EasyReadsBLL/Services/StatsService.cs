@@ -19,23 +19,12 @@ namespace EasyReadsBLL.Services
             _articleService = articleService;
         }
 
-        public AuthorStats GetAuthorStats(string username, DateTime? startdate, DateTime? enddate)
+        public AuthorStats GetAuthorStats(AuthorStats stats)
         {
-            AuthorStats stats = new AuthorStats();
-            stats.Username = username;
-            if(startdate == null)
-            {
-                stats.StartDate = DateTime.Now.AddDays(-6);
-            }
-            if(enddate == null)
-            {
-                stats.EndDate = DateTime.Now;
-            }
+            stats.ArticlePosted = _dataAccessFactory.ArticleData().GetAllArticlesOfAuthorByDate(stats.Username, stats.StartDate, stats.EndDate).Count();
+            stats.FollowerGained = _dataAccessFactory.FollowerData().GetAllFollowersByDate(stats.Username, stats.StartDate, stats.EndDate).Count();
 
-            stats.ArticlePosted = _dataAccessFactory.ArticleData().GetAllArticlesOfAuthorByDate(username, stats.StartDate, stats.EndDate).Count();
-            stats.FollowerGained = _dataAccessFactory.FollowerData().GetAllFollowersByDate(username, stats.StartDate, stats.EndDate).Count();
-
-            var articles = _dataAccessFactory.ArticleData().GetAllArticlesOfAuthor(username);
+            var articles = _dataAccessFactory.ArticleData().GetAllArticlesOfAuthor(stats.Username);
             foreach(var article in articles)
             {
                 stats.BookmarkReceived += _dataAccessFactory.BookmarkData().GetArticleBookmarksByDate(article.ArticleId, stats.StartDate, stats.EndDate).Count();
@@ -44,6 +33,36 @@ namespace EasyReadsBLL.Services
             }
 
             stats.TopArticles = _articleService.Convert(articles.Take(5).ToList());
+
+            return stats;
+        }
+
+        public TopicStats GetTopicStats(TopicStats stats)
+        {
+            stats.ArticlePosted = _dataAccessFactory.ArticleData().GetAllArticlesOfTopicByDate(stats.TopicId, stats.StartDate, stats.EndDate).Count();
+            stats.FollowerGained = _dataAccessFactory.TopicData().UserTopicsByDate(stats.TopicId, stats.StartDate, stats.EndDate).Count();
+
+            var articles = _dataAccessFactory.ArticleData().GetTopArticlesByTopic(stats.TopicId);
+            foreach (var article in articles)
+            {
+                stats.BookmarkReceived += _dataAccessFactory.BookmarkData().GetArticleBookmarksByDate(article.ArticleId, stats.StartDate, stats.EndDate).Count();
+                stats.CommentsReceived += _dataAccessFactory.CommentData().GetAllCommentsByDate(article.ArticleId, stats.StartDate, stats.EndDate).Count();
+                stats.LikesReceived += _dataAccessFactory.LikeData().GetAllLikesByDate(article.ArticleId, stats.StartDate, stats.EndDate).Count();
+            }
+
+            stats.TopArticles = _articleService.Convert(articles.Take(5).ToList());
+
+            return stats;
+        }
+
+        public BasicStats GetBasicStats()
+        {
+            BasicStats stats = new BasicStats();
+            stats.TotalUsers = _dataAccessFactory.UserData().GetAllUsers().Count();
+            stats.TotalAuthors = _dataAccessFactory.UserData().GetAllAuthors().Count();
+            stats.UsersJoinedToday = _dataAccessFactory.UserData().JoinedToday().Count();
+            stats.TotalArticlesPosted = _dataAccessFactory.ArticleData().GetAllArticles().Count();
+            stats.TotalArticlesPosted = _dataAccessFactory.ArticleData().GetAllArticlesOfToday().Count();
 
             return stats;
         }

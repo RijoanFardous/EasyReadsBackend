@@ -167,20 +167,22 @@ namespace EasyReadsDAL.Repos
 
         public List<Article> GetTopArticles()
         {
-            return _context.Articles.FromSqlRaw(@"
-                    SELECT TOP 10 *
-                    FROM Articles
-                    ORDER BY LikesCount DESC, CommentsCount DESC, BookmarksCount DESC
-                ").ToList();
+            var articles = _context.Articles
+                .OrderByDescending(a => a.LikesCount)
+                .ThenByDescending(a => a.CommentsCount)
+                .ThenByDescending(a => a.BookmarksCount).Take(10)
+                .ToList();
+            return articles;
         }
 
         public List<Article> GetTopArticlesByTopic(int topicId)
         {
-            return _context.Articles.FromSqlRaw(@"
-                    SELECT TOP 10 *
-                    FROM Articles WHERE opicId = {0}
-                    ORDER BY LikesCount DESC, CommentsCount DESC, BookmarksCount DESC
-                ", topicId).ToList();
+            var articles = (from a in _context.Articles where a.TopicId == topicId select a)
+                .OrderByDescending(a => a.LikesCount)
+                .ThenByDescending(a => a.CommentsCount)
+                .ThenByDescending(a => a.BookmarksCount).Take(10)
+                .ToList();
+            return articles;
         }
 
         public void CreateArticleVersion(ArticleVersion version)
@@ -218,6 +220,19 @@ namespace EasyReadsDAL.Repos
                 _context.ArticleVersions.Remove(version);
             }
             _context.SaveChanges();
+        }
+
+        public List<Article> GetAllArticlesOfTopicByDate(int topicId, DateTime startdate, DateTime enddate)
+        {
+            return (from article in _context.Articles
+                    where article.TopicId == topicId && article.PostedAt >= startdate && article.PostedAt <= enddate
+                    select article).ToList();
+        }
+
+        public List<Article> GetAllArticlesOfToday()
+        {
+            var data = (from a in _context.Articles where a.PostedAt <= DateTime.Now && a.PostedAt >= DateTime.Now.AddDays(-1) select a).ToList();
+            return data;
         }
     }
 }

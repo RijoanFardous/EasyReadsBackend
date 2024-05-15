@@ -66,10 +66,14 @@ namespace EasyReadsDAL.Repos
             }
         }
 
-        public void AddUserTopic(UserTopic userTopic)
+        public void AddUserTopic(UserTopic obj)
         {
-            _db.UserTopics.Add(userTopic);
-            _db.SaveChanges();
+            var topic = (from usertopic in _db.UserTopics where usertopic.TopicId == obj.TopicId && usertopic.Username.Equals(obj.Username) select usertopic).FirstOrDefault();
+            if(topic == null)
+            {
+                _db.UserTopics.Add(obj);
+                _db.SaveChanges();
+            }
         }
 
         public void RemoveUserTopic(UserTopic userTopic)
@@ -80,6 +84,12 @@ namespace EasyReadsDAL.Repos
                 _db.UserTopics.Remove(userTopic1);
                 _db.SaveChanges();
             }
+        }
+
+        public List<UserTopic> UserTopicsByDate(int topicId, DateTime startdate, DateTime enddate)
+        {
+            var data = (from ut in _db.UserTopics where ut.TopicId == topicId && ut.TimeStamp >= startdate && ut.TimeStamp <= enddate select ut).ToList();
+            return data;
         }
     }
 }

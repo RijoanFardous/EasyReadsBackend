@@ -14,11 +14,13 @@ namespace EasyReadsDAL.Interfaces
         void DeleteArticle(int id);
         Article? GetArticle(int id);
         List<Article> GetAllArticles();
+        List<Article> GetAllArticlesOfToday();
         List<Article> GetAllPublicArticles();
         List<Article> GetTopArticles();
         List<Article> GetTopArticlesByTopic(int topicId);
         List<Article> GetAllArticlesOfAuthor(string username);
         List<Article> GetAllArticlesOfAuthorByDate(string username, DateTime startdate, DateTime enddate);
+        List<Article> GetAllArticlesOfTopicByDate(int topicId, DateTime startdate, DateTime enddate);
         List<Article> GetAllArticlesOfTopic(int topicId);
         List<Article> GetPublicArticlesofAuthor(string username);
         List<Article> GetFollowersOnlyArticlesOfAuthor(string username);

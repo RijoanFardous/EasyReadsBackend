@@ -47,14 +47,23 @@ namespace EasyReadsBLL.Services
         public void UpdateComment(CommentDTO commentDTO)
         {
             Comment comment = new Comment();
+            comment.CommentId = commentDTO.CommentId;
+            comment.ArticleId = commentDTO.ArticleId;
             comment.Content = commentDTO.Content;
             _dataAccessFactory.CommentData().UpdateComment(comment);
         }
 
         public void DeleteComment(int id)
         {
-            _dataAccessFactory.CommentData().DeleteAllReplies(id);
-            _dataAccessFactory.CommentData().DeleteComment(id);
+            
+            var comment = _dataAccessFactory.CommentData().GetComment(id);
+            if(comment != null)
+            {
+                _dataAccessFactory.CommentData().DeleteAllReplies(id);
+                _dataAccessFactory.ArticleData().DecCommentsCount(comment.ArticleId);
+                _dataAccessFactory.CommentData().DeleteComment(id);
+            }
+
         }
 
         public void CreateReply(ReplyDTO replyDTO)
@@ -86,6 +95,9 @@ namespace EasyReadsBLL.Services
         public void UpdateReply(ReplyDTO replyDTO)
         {
             Reply reply = new Reply();
+            reply.CommentId = replyDTO.CommentId;
+            reply.Username = replyDTO.Username;
+            reply.ReplyId = replyDTO.ReplyId;
             reply.Content = replyDTO.Content;
             _dataAccessFactory.CommentData().UpdateReply(reply);
         }

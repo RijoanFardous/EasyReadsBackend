@@ -29,7 +29,7 @@ namespace EasyReadsAPI.Controllers
         }
 
         [HttpGet]
-        [Route("get/{username}")]
+        [Route("get/user/{username}")]
         public IActionResult GetAllBookmarks(string username)
         {
             var bookmarks = _bookmarkService.GetAllBookmarks(username);

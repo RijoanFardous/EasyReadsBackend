@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using EasyReadsAPI.Auth;
 using EasyReadsBLL.DTOs;
 using EasyReadsBLL.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -20,7 +21,7 @@ namespace EasyReadsAPI.Controllers
             _topicService = topicService;
         }
 
-
+        [TypeFilter(typeof(AdminAttribute))]
         [HttpPost]
         [Route("addTopic")]
         public IActionResult AddTopic(TopicDTO topic)
@@ -58,6 +59,7 @@ namespace EasyReadsAPI.Controllers
             }
         }
 
+        [TypeFilter(typeof(AdminAttribute))]
         [HttpPut]
         [Route("UpdateTopic/{id}")]
         public IActionResult UpdateTopic (TopicDTO singletopic)
@@ -73,6 +75,7 @@ namespace EasyReadsAPI.Controllers
             if (ModelState.IsValid)
             {
                 _topicService.FollowTopic(userTopicDTO);
+                return Ok();
             }
             return BadRequest(ModelState);
         }
@@ -84,6 +87,7 @@ namespace EasyReadsAPI.Controllers
             if (ModelState.IsValid)
             {
                 _topicService.UnFollowTopic(userTopicDTO);
+                return Ok();
             }
             return BadRequest(ModelState);
         }

@@ -1,4 +1,5 @@
-﻿using EasyReadsBLL.DTOs;
+﻿using EasyReadsAPI.Auth;
+using EasyReadsBLL.DTOs;
 using EasyReadsBLL.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -27,6 +28,7 @@ namespace EasyReadsAPI.Controllers
             return BadRequest(ModelState);
         }
 
+        [TypeFilter(typeof(AdminAttribute))]
         [HttpPut]
         [Route("reject/{id}")]
         public IActionResult RejectReport(int id)
@@ -35,6 +37,7 @@ namespace EasyReadsAPI.Controllers
             return Ok();
         }
 
+        [TypeFilter(typeof(AdminAttribute))]
         [HttpPut]
         [Route("approve/{id}")]
         public IActionResult ApproveReport(int id, int articleId)
@@ -56,7 +59,7 @@ namespace EasyReadsAPI.Controllers
         }
 
         [HttpGet]
-        [Route("get/{username}")]
+        [Route("get/user/{username}")]
         public IActionResult GetReportByUser(string username)
         {
             var data = _reportService.GetReportByUser(username);

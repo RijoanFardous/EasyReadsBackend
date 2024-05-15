@@ -80,5 +80,17 @@ namespace EasyReadsDAL.Repos
                 _context.SaveChanges();
             }
         }
+
+        public List<User> GetAllAuthors()
+        {
+            var data = (from u in _context.Users where u.UserType.Equals("Author") select u).ToList();
+            return data;
+        }
+
+        public List<User> JoinedToday()
+        {
+            var data = (from u in _context.Users where u.JoinDate <= DateOnly.FromDateTime(DateTime.Today) && u.JoinDate >= DateOnly.FromDateTime(DateTime.Today.AddDays(-1)) select u).ToList();
+            return data;
+        }
     }
 }

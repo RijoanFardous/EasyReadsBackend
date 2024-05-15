@@ -91,8 +91,8 @@ namespace EasyReadsAPI.Controllers
         }
 
         [HttpGet]
-        [Route("get/{commentId}/reply/{replyId}")]
-        public IActionResult GetReply(int commentId, int replyId)
+        [Route("get/reply/{replyId}")]
+        public IActionResult GetReply(int replyId)
         {
             var data = _commentService.GetReply(replyId);
             if (data != null)
@@ -113,7 +113,7 @@ namespace EasyReadsAPI.Controllers
 
 
         [HttpPut]
-        [Route("reply/{id}")]
+        [Route("reply/update/{id}")]
         public IActionResult UpdateReply(ReplyDTO replyDTO)
         {
             if (ModelState.IsValid)

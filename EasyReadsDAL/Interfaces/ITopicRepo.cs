@@ -19,5 +19,6 @@ namespace EasyReadsDAL.Interfaces
 
         public void AddUserTopic(UserTopic userTopic);
         public void RemoveUserTopic(UserTopic userTopic);
+        public List<UserTopic> UserTopicsByDate(int topicId, DateTime startdate, DateTime enddate);
     }
 }
